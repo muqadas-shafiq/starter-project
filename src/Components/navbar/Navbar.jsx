@@ -1,63 +1,209 @@
-import React, { useState } from 'react';
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import ServicesDropdown from './ServicesDropdown';
+
+import React, { useState, useEffect } from "react";
+
+
+import { Link } from "react-router-dom";
+import {
+  IoIosArrowDown,
+  IoIosArrowUp,
+  IoIosMenu,
+  IoIosClose,
+} from "react-icons/io";
+import Megadropdown from "../MegaDropDown";
+
+import MegaDropDownIndustries from "../MegaDropDownForIndustries";
+
 
 const Navbar = () => {
   const [hovered, setHovered] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [industriesDropdownOpen, setIndustriesDropdownOpen] = useState(false);
+  const [companyDropdownOpen, setCompanyDropdownOpen] = useState(false);
+  // useEffect(async()=>{
+  //    const session = await auth()
 
+  // },[])
   const handleMouseEnter = (item) => {
-    setHovered(item);
+    if (window.innerWidth >= 768) {
+      // only handle hover on desktop
+      setHovered(item);
+    }
   };
 
   const handleMouseLeave = () => {
-    setHovered(false);
+    if (window.innerWidth >= 768) {
+      // only handle hover on desktop
+      setHovered(false);
+    }
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const toggleServicesDropdown = () => {
+    setServicesDropdownOpen(!servicesDropdownOpen);
+  };
+
+  const toggleIndustriesDropdown = () => {
+    setIndustriesDropdownOpen(!industriesDropdownOpen);
+  };
+
+  const toggleCompanyDropdown = () => {
+    setCompanyDropdownOpen(!companyDropdownOpen);
   };
 
   return (
-    <>
-      <div className={`flex justify-between py-6 px-28 fixed w-full font-poppins text-[15px] top-0 left-0 right-0 z-10 text-primary bg-white`}>
-        <div>INFOLATCH</div>
-        <div>
-          <ul className='flex gap-6'>
-            <li onMouseEnter={() => handleMouseEnter("home")}
+    <div className={`fixed w-full z-10 text-secondary bg-fifth`}>
+      <div className="flex justify-center  items-center px-1 md:px-28 py-5">
+      
+        <div className="md:hidden">
+          <button onClick={toggleMenu}>
+            {menuOpen ? <IoIosClose size={30} /> : <IoIosMenu size={30} />}
+          </button>
+        </div>
+        <div className={`hidden md:flex gap-6 font-semibold`}>
+          <ul className="flex gap-6 font-semibold">
+            <Link
+              to={"/"}
+              onMouseEnter={() => handleMouseEnter("home")}
               onMouseLeave={handleMouseLeave}
-            >Home</li>
-            <li onMouseEnter={() => handleMouseEnter("services")}
+              className={`${hovered === "home" ? "text-tirtry" : ""}`}
+            >
+              Home
+            </Link>
+            <li>
+              <Link
+                to={"/about"}
+                onMouseEnter={() => handleMouseEnter("Company")}
+                onMouseLeave={handleMouseLeave}
+                className={`flex gap-2 justify-center items-center transition-all duration-150 ${
+                  hovered === "Company" ? "text-tirtry" : ""
+                }`}
+              >
+                About{" "}
+             
+              </Link>
+           
+            </li>
+            <li
+              onMouseEnter={() => handleMouseEnter("services")}
               onMouseLeave={handleMouseLeave}
-              className='flex gap-2 justify-center items-center transition-all duration-150'
-            >Services {hovered === "services" ? <IoIosArrowUp /> : <IoIosArrowDown />} </li>
-            <li onMouseEnter={() => handleMouseEnter("Industries")}
+            >
+              <Link
+                to="/services"
+                className={`flex gap-2 justify-center items-center transition-all duration-150 ${
+                  hovered === "services" ? "text-tirtry" : ""
+                }`}
+              >
+                Services{" "}
+                {hovered === "services" ? <IoIosArrowUp /> : <IoIosArrowDown />}
+              </Link>
+              {hovered === "services" && (
+                <div
+                  onMouseEnter={() => handleMouseEnter("services")}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <Megadropdown />
+                </div>
+              )}
+            </li>
+            <li>
+              <Link
+                to={"/"}
+                onMouseEnter={() => handleMouseEnter("Industries")}
+                onMouseLeave={handleMouseLeave}
+                className={`flex gap-2 justify-center items-center transition-all duration-150 ${
+                  hovered === "Industries" ? "text-tirtry" : ""
+                }`}
+              >
+                Industries{" "}
+                {hovered === "Industries" ? (
+                  <IoIosArrowUp />
+                ) : (
+                  <IoIosArrowDown />
+                )}{" "}
+              </Link>
+              {hovered === "Industries" && (
+                <div
+                  onMouseEnter={() => handleMouseEnter("Industries")}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <MegaDropDownIndustries />
+                </div>
+              )}
+            </li>
+
+            <Link
+              to={"/work"}
+              onMouseEnter={() => handleMouseEnter("work")}
               onMouseLeave={handleMouseLeave}
-              className='flex gap-2 justify-center items-center transition-all duration-150'
-            >Industries {hovered === "Industries" ? <IoIosArrowUp /> : <IoIosArrowDown />} </li>
-            <li onMouseEnter={() => handleMouseEnter("work")}
+              className={`${hovered === "work" ? "text-tirtry" : ""}`}
+            >
+              Our Work
+            </Link>
+
+         
+            <Link
+              to={"/contact"}
+              onMouseEnter={() => handleMouseEnter("contact")}
               onMouseLeave={handleMouseLeave}
-            >Our Work</li>
-            <li onMouseEnter={() => handleMouseEnter("Company")}
-              onMouseLeave={handleMouseLeave}
-              className='flex gap-2 justify-center items-center transition-all duration-150'
-            >Company {hovered === "Company" ? <IoIosArrowUp /> : <IoIosArrowDown />} </li>
-            <li onMouseEnter={() => handleMouseEnter("Blog")}
-              onMouseLeave={handleMouseLeave}
-              className={`${hovered === "Blog" ? 'underline' : ''}`}
-            >Blog</li>
+              className={`${hovered === "contact" ? "text-tirtry" : ""}`}
+            >
+              Contact
+            </Link>
+          
           </ul>
         </div>
-        <button className='border-2 border-primary text-primary font-semibold rounded-full py-2 px-6 text-sm'>Contact US</button>
+     
       </div>
+      {menuOpen && (
+        <div className="md:hidden flex flex-col items-start bg-white px-2 text-black">
+          <Link to={"/"} className="py-1" onClick={toggleMenu}>
+            Home
+          </Link>
+          <div className="py-1" onClick={toggleMenu}>
+    
+    <Link to={"/about"} className="w-full">
+      About
+    </Link>
 
-      <div>
-        {hovered === "services" && (
-          <div
-            onMouseEnter={() => handleMouseEnter("services")}
-            onMouseLeave={handleMouseLeave}
-            className='absolute w-full top-[72px] z-0'
-          >
-            <ServicesDropdown />
+</div>
+          <div className="py-1" onClick={toggleServicesDropdown}>
+            <div className="flex justify-between w-full items-center">
+              <Link to="/services" className="w-full">
+                Services
+              </Link>
+              {servicesDropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            </div>
+          <div onClick={toggleMenu}>
+          {servicesDropdownOpen && <Megadropdown />}
           </div>
-        )}
-      </div>
-    </>
+          </div>
+          <div className="py-1" onClick={toggleIndustriesDropdown}>
+            <div className="flex justify-between w-full items-center">
+              <Link to={"/"} className="w-full">
+                Industries
+              </Link>
+              {industriesDropdownOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+            </div>
+            <div onClick={toggleMenu}>
+            {industriesDropdownOpen && <MegaDropDownIndustries />}
+            </div>
+          </div>
+          <Link to={"/work"} className="py-1" onClick={toggleMenu}>
+            Our Work
+          </Link>
+         
+       
+          <Link to={"/contact"} className="py-1" onClick={toggleMenu}>
+            Contact
+          </Link>
+        
+        </div>
+      )}
+    </div>
   );
 };
 

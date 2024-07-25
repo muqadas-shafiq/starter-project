@@ -2,6 +2,8 @@ import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import MyRoutes from './MyRoutes'
 import Aos from "aos";
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
 import "aos/dist/aos.css";
 const App = () => {
   Aos.init({
@@ -13,7 +15,9 @@ const App = () => {
       
 
       <BrowserRouter>
+      <Navbar/>
       <MyRoutes/>
+      <Footer/>
       </BrowserRouter>
     </div>
   )
