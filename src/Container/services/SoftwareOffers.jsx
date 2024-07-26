@@ -95,7 +95,7 @@ const SoftwareOffers = () => {
 
   return (
     <>
-    <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-gray-100'>
+    <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-white'>
       <h1 className='text-4xl font-heading font-bold text-forth'>Software Development Services</h1>
       <div className='py-20 grid lg:grid-cols-2 gap-10'>
         {subServices.map(service => (

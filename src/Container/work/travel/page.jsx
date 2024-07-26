@@ -6,7 +6,7 @@ import { MdOutlineBubbleChart } from "react-icons/md";
 import { MdOutlineStackedLineChart } from "react-icons/md";
 
 import GetConsultingSection from "../../../components/GetConsultingSection";
-
+import ParticlesComponent from "../../../components/particles";
 
 import { SiCodeigniter } from "react-icons/si";
 import { BiCodeBlock } from "react-icons/bi";
@@ -103,7 +103,8 @@ export default function TravelWork(){
     return(
         <>
         
-        <div className='bg-forth'>
+        <div className=''>
+        <ParticlesComponent id="particles"/>
         <div className="  flex justify-between pt-20 pb-10 gap-10">
         <div className='pt-20 min-h-fit flex justify-center items-start  text-secondary flex-col py-20 pl-20 w-[70%]'>
             <h1 className=' text-6xl  font-poppins tracking-wide font-bold leading-tight'>TripMate</h1>
@@ -129,7 +130,7 @@ export default function TravelWork(){
         </div> */}
         </div>
         </div>
-        <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-gray-100'>
+        <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-white'>
       <h1 className='text-4xl font-heading font-bold text-forth'>Overview  </h1>
       <div className='py-20 grid grid-cols-2 gap-10'>
         {subServices.map(service => (

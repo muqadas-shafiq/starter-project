@@ -8,7 +8,7 @@ import Resorces from "../../../components/Home/Resorces";
 import BenefitsUs from "../BenefitsWorkWithUs"
 
 import { MdAdsClick, MdOutlineDeveloperMode } from "react-icons/md";
-
+import ParticlesComponent from "../../../components/particles";
 import { GiLowTide } from "react-icons/gi";
 import { FaHighlighter } from "react-icons/fa";
 import { PiUserCircleBold } from "react-icons/pi";
@@ -47,7 +47,8 @@ export default function DigitalMarketing() {
 
   return (
     <>
-      <div className="bg-forth">
+      <div className="">
+      <ParticlesComponent id="particles"/>
         <div className="  flex justify-between pt-20 pb-10 lg:gap-10">
           <div className="pt-20 min-h-fit flex justify-center items-start  text-secondary flex-col lg:py-20 lg:pl-20 lg:w-[70%] w-full p-6">
             <h1 className=" text-3xl lg:text-6xl  font-poppins tracking-wide font-bold leading-tight">

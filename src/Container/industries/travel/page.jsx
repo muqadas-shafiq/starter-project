@@ -9,7 +9,7 @@ import Images from "../../../data";
 import ServiceCard from "../../../components/ServiceCard";
 import BenefitsUs from "../../services/BenefitsWorkWithUs";
 import { BiLastPage, BiSolidBullseye } from "react-icons/bi";
-
+import ParticlesComponent from "../../../components/particles";
 import { IoIosArrowForward } from "react-icons/io";
 
 
@@ -141,7 +141,8 @@ const industries = [
 
     return(
         <>
-        <div className='bg-forth'>
+        <div className=''>
+        <ParticlesComponent id="particles"/>
         <div className="  flex justify-between pt-20 pb-10 lg:gap-10">
         <div className='pt-20 min-h-fit flex justify-center items-start  text-secondary flex-col lg:py-20 lg:pl-20 lg:w-[70%] w-full p-6'>
             <h1 className=' text-3xl lg:text-6xl  font-poppins tracking-wide font-bold leading-tight'>Elevate your Travel and Hospitality Business with our Tailored Software Solutions
@@ -176,9 +177,9 @@ const industries = [
 
   
         </div>
-        <h1 className=' lg:px-20 p-6 pt-20 text-4xl font-heading font-bold text-forth'>Grow your Business Clientele with our Full Range of Travel and Hospitality Solutions 
+        <h1 className=' lg:px-20 p-6 pt-20 text-4xl font-heading font-bold text-forth bg-secondary'>Grow your Business Clientele with our Full Range of Travel and Hospitality Solutions 
         </h1>
-        <div className='py-20 grid lg:grid-cols-2 gap-10 lg:px-20 p-6'>
+        <div className='py-20 grid lg:grid-cols-2 gap-10 lg:px-20 p-6 bg-secondary'>
       {subServicesTwo.map(service => (
         <ServiceCard
           key={service.id}
@@ -195,7 +196,7 @@ const industries = [
     <div className="py-20 lg:px-20 p-6">
       <h1 className=" py-10 text-4xl font-heading font-semibold text-forth">Our Travel and Hospitality Services to Boost Your Business
       </h1>
-    <div className=' grid lg:grid-cols-2 gap-10 '>
+    <div className=' grid lg:grid-cols-2 gap-10 bg-secondary'>
       {subServicesTwo.map(service => (
         <ServiceCardTwo
           key={service.id}

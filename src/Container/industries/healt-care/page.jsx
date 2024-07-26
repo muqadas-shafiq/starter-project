@@ -14,7 +14,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { GoDotFill } from "react-icons/go";
 
 import { BiCategory } from "react-icons/bi";
-
+import ParticlesComponent from "../../../components/particles";
 import { BiBarChart } from "react-icons/bi";
 import { SiCodeigniter, SiSpeedtest } from "react-icons/si";
 import { MdPages } from "react-icons/md";
@@ -150,7 +150,8 @@ const industries = [
       ]
     return(
         <>
-        <div className='bg-forth'>
+        <div className=''>
+        <ParticlesComponent id="particles"/>
         <div className="  flex justify-between pt-20 pb-10 lg:gap-10">
         <div className='pt-20 min-h-fit flex justify-center items-start  text-secondary flex-col lg:py-20 lg:pl-20 lg:w-[70%] w-full p-6'>
             <h1 className=' text-3xl lg:text-6xl  font-poppins tracking-wide font-bold leading-tight'>Get Healthcare Development Services for Effortless Patient Care!
@@ -185,9 +186,9 @@ const industries = [
 
   
         </div>
-        <h1 className=' lg:px-20 p-6 pt-20 text-4xl font-heading font-bold text-forth'>Lead the way with our Full Range Healthcare Solutions 
+        <h1 className=' lg:px-20 p-6 pt-20 text-4xl font-heading font-bold text-forth bg-secondary'>Lead the way with our Full Range Healthcare Solutions 
         </h1>
-        <div className='py-20 grid lg:grid-cols-2 gap-10 lg:px-20 p-6'>
+        <div className='py-20 grid lg:grid-cols-2 gap-10 lg:px-20 p-6 bg-secondary'>
       {subServicesTwo.map(service => (
         <ServiceCard
           key={service.id}
@@ -201,10 +202,10 @@ const industries = [
    
        
     <GetConsultingSection heading={" Interested in different services?"} text1={"Look no further. Your challenge, our expertise."} text2={"Schedule a call to share your idea!"}/>
-    <div className="py-20 lg:px-20 p-6">
+    <div className="py-20 lg:px-20 p-6 bg-secondary">
       <h1 className=" py-10 text-4xl font-heading font-semibold text-forth">Our Healthcare Services to Elevate Your Patientcare
       </h1>
-    <div className=' grid lg:grid-cols-2 gap-10 '>
+    <div className=' grid lg:grid-cols-2 gap-10 bg-secondary'>
       {subServicesThree.map(service => (
         <ServiceCardTwo
           key={service.id}
