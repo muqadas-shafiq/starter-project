@@ -9,9 +9,9 @@ import {
   IoIosMenu,
   IoIosClose,
 } from "react-icons/io";
-import Megadropdown from "../MegaDropDown";
+import Megadropdown from "./MegaDropDown";
 
-import MegaDropDownIndustries from "../MegaDropDownForIndustries";
+import MegaDropDownIndustries from "./MegaDropDownForIndustries";
 
 
 const Navbar = () => {

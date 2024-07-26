@@ -10,7 +10,7 @@ import TestimonialSlider from "../components/Home/TestimonialSection";
 import TrustedBy from "../components/Home/TrustedBy";
 import ParticlesComponent from "../components/particles";
 
-import Navbar from "../components/navbar/Navbar";
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
