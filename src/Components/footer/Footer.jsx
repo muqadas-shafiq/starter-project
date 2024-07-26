@@ -3,13 +3,13 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
 import { FaFacebook } from "react-icons/fa";
-
+import Images from "../../data";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import {Link} from "react-router-dom"
 
 export default function Footer(){
-   
+   const {LOGO} = Images
   return(
       <>
       <footer className="bg-white">
@@ -56,7 +56,7 @@ export default function Footer(){
           </div>
          <div className=" lg:flex justify-between items-center px-6 gap-10 lg:px-28 pb-10">
          <div>
-        <img src="/LOGO.jpeg" alt="logo" width={300}/>
+        <img src={LOGO} alt="logo" width={300}/>
      </div>
      <div className=" flex lg:flex-row flex-col gap-5 text-gray-500">
      <Link to="/privacy-policy">Privacy Policy</Link>

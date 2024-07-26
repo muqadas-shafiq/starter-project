@@ -1,5 +1,5 @@
 import React from "react";
-
+import Images from "../../data";
 import GetandEstimateButtn from "../../components/GetandEstimateButtn";
 import BookACallButton from "../../components/BookACallButton";
 import GetConsultingSection from "../../components/GetConsultingSection";
@@ -9,6 +9,7 @@ import ParticlesComponent from "../../components/particles";
 import BenefitsUs from "../services/BenefitsWorkWithUs";
 
 const AboutPage = () => {
+  const {groupTwo} = Images
   return (
     <>
       <div className="">
@@ -82,7 +83,7 @@ const AboutPage = () => {
       </div>
       <div className=" flex flex-col lg:flex-row justify-between items-start py-20 lg:px-28 p-6 gap-10 min-h-screen w-full">
         <div className=" lg:w-1/2">
-          <img src="/group2.jpeg" alt="helo" width={500} height={500} />
+          <img src={groupTwo} alt="helo" width={500} height={500} />
         </div>
         <div className=" lg:w-1/2 ">
           <h1 className=" text-4xl font-heading mb-6 font-semibold uppercase text-forth">

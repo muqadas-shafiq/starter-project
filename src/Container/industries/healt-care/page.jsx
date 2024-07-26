@@ -4,7 +4,7 @@ import BookACallButton from "../../../components/BookACallButton";
 import GetConsultingSection from "../../../components/GetConsultingSection";
 import ServiceCardTwo from "../../../components/ServiceCardTwo";
 import Resorces from "../../../components/Home/Resorces";
-
+import Images from "../../../data";
 import ServiceCard from "../../../components/ServiceCard";
 import BenefitsUs from "../../services/BenefitsWorkWithUs";
 import { BiLastPage, BiSolidBullseye } from "react-icons/bi";
@@ -22,6 +22,7 @@ import { FaPagelines } from "react-icons/fa";
 import { AiOutlineAccountBook } from "react-icons/ai";
 export default function HealthCare (){
   const [hoveredId, setHoveredId] = useState(null);
+  const {health} = Images
   const subServicesTwo = [
     {
       id: 1,
@@ -218,7 +219,7 @@ const industries = [
         <BenefitsUs/>
         <Resorces 
        heading="Our expertise in Healthcare industry" 
-       src="/industries/health.jpeg" projectName="Synergy Health" 
+       src={health} projectName="Synergy Health" 
        subHeading="Industry: Healthcare" 
        description="Olumi has designed top-notch healthcare software development services for many from healthcare sector with the help of its professional team of expert developers. We have been delivering tailored healthcare solutions to ensure streamlined communication between healthcare providers and patients.
 " 

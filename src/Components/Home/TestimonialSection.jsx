@@ -2,7 +2,7 @@
 import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import Images from '../../data';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -16,7 +16,7 @@ import './styles.css';
 import { EffectFade, Navigation, Pagination } from 'swiper/modules';
 
 const TestimonialSlider = () => {
- 
+  const {Profile} = Images
 const reviews = [
   {
     id:1,
@@ -69,7 +69,7 @@ const reviews = [
       {reviews.map(review=> (
           <SwiperSlide key={review?.id} className=' shadow-md shadow-gray-200 flex flex-col items-start py-10  px-12   lg:px-20 justify-start font-poppins'>
           <div className=' flex gap-4 items-start' >
-           <img src='/profile.jpg' alt="helo" className=' rounded-full w-16'  />
+           <img src={Profile} alt="helo" className=' rounded-full w-16'  />
           <div className=' flex flex-col items-start'>
           <p className=' font-semibold text-forth'>{review.name}</p>
           <p>⭐⭐⭐⭐⭐</p>

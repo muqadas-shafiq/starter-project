@@ -5,7 +5,7 @@ import BookACallButton from "../../../components/BookACallButton";
 import GetConsultingSection from "../../../components/GetConsultingSection";
 import ServiceCardTwo from "../../../components/ServiceCardTwo";
 import Resorces from "../../../components/Home/Resorces";
-
+import Images from "../../../data";
 import ServiceCard from "../../../components/ServiceCard";
 import BenefitsUs from "../../services/BenefitsWorkWithUs";
 import { BiLastPage, BiSolidBullseye } from "react-icons/bi";
@@ -24,6 +24,7 @@ import { FaPagelines } from "react-icons/fa";
 import { AiOutlineAccountBook } from "react-icons/ai";
 export default function Travel (){
   const [hoveredId, setHoveredId] = useState(null);
+  const {travel} = Images
   const subServicesTwo = [
     {
       id: 1,
@@ -209,7 +210,7 @@ const industries = [
         <BenefitsUs/>
         <Resorces 
        heading="Our expertise in Travel industry" 
-       src="/industries/travel.png" projectName="TripMate" 
+       src={travel} projectName="TripMate" 
        subHeading="Industry: Travel and Hospitality" 
        description="Olumi travel and hospitality software development services offer tailored solutions for enhancing operations while elevating user experience. From hotel management solutions to booking apps to POS and CRM system integration, we have designed apps and websites for the hospitality industry to carry out business smoothly with a boosted performance.
 

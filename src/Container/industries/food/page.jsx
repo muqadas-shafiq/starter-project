@@ -10,7 +10,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import ServiceCard from "../../../components/ServiceCard";
 import BenefitsUs from "../../services/BenefitsWorkWithUs";
 import { GoDotFill } from "react-icons/go";
-
+import Images from "../../../data";
 import { BiCategory } from "react-icons/bi";
 
 import { BiBarChart } from "react-icons/bi";
@@ -19,6 +19,7 @@ import { MdPages } from "react-icons/md";
 import { FaPagelines } from "react-icons/fa";
 import { AiOutlineAccountBook } from "react-icons/ai";
 export default function Food() {
+  const {food} = Images
   const [hoveredId, setHoveredId] = useState(null);
   const subServicesTwo = [
     {
@@ -244,7 +245,7 @@ export default function Food() {
       <BenefitsUs />
       <Resorces 
        heading="Our expertise in food industry" 
-       src="/industries/food.jpg" projectName="FoodiePal" 
+       src={food} projectName="FoodiePal" 
        subHeading="Industry: Food Ordering and Delivery " 
        description="We have created food ordering and delivery apps for many food services that connect foodies with nearby restaurants effortlessly with tailored food delivery apps. Here’s how we bring user-friendly app development with the latest technology and features for many businesses." 
        moreDes="Our tailored web and app development solutions will provide fully functional web and apps with integrated tools and analytics for their food business to track, monitor, and optimise the key metrics for boosting sales. "

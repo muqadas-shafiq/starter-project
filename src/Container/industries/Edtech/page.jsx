@@ -4,7 +4,7 @@ import BookACallButton from "../../../components/BookACallButton";
 import GetConsultingSection from "../../../components/GetConsultingSection";
 import ServiceCardTwo from "../../../components/ServiceCardTwo";
 import Resorces from "../../../components/Home/Resorces";
-
+import Images from "../../../data";
 import ServiceCard from "../../../components/ServiceCard";
 import BenefitsUs from "../../services/BenefitsWorkWithUs";
 import { BiLastPage, BiSolidBullseye } from "react-icons/bi";
@@ -21,6 +21,7 @@ import { MdPages } from "react-icons/md";
 import { FaPagelines } from "react-icons/fa";
 import { AiOutlineAccountBook } from "react-icons/ai";
 export default function EdTech() {
+  const {education} = Images
   const [hoveredId, setHoveredId] = useState(null);
   const subServicesTwo = [
     {
@@ -233,7 +234,7 @@ export default function EdTech() {
       <BenefitsUs />
       <Resorces 
        heading="Our EdTech in food industry" 
-       src="/industries/education.jpeg"
+       src={education}
         projectName="EduPortal" 
        subHeading="Industry: Education  " 
        description="Olumi experts have built many E-learning apps, Learning Management Systems (LMS), as well as school management software for different institutes. Our solutions for IT institutes, schools, universities, colleges, training centres, and government agencies helped them design courses, track student progress and help them with online learning.

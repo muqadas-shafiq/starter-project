@@ -4,7 +4,7 @@ import BookACallButton from "../../../components/BookACallButton";
 import GetConsultingSection from "../../../components/GetConsultingSection";
 import ServiceCardTwo from "../../../components/ServiceCardTwo";
 import Resorces from "../../../components/Home/Resorces";
-
+import Images from "../../../data";
 import ServiceCard from "../../../components/ServiceCard";
 import BenefitsUs from "../../services/BenefitsWorkWithUs";
 import { BiLastPage, BiSolidBullseye } from "react-icons/bi";
@@ -22,6 +22,7 @@ import { FaPagelines } from "react-icons/fa";
 import { AiOutlineAccountBook } from "react-icons/ai";
 import { TbMathIntegralX } from "react-icons/tb";
 export default function Fintech (){
+  const {finance} = Images
   const [hoveredId, setHoveredId] = useState(null);
   const subServicesTwo = [
     {
@@ -234,7 +235,7 @@ export default function Fintech (){
         <BenefitsUs/>
         <Resorces 
        heading="Our expertise in Fintech industry" 
-       src="/industries/finance.jpg" projectName="BudgetBuddy" 
+       src={finance} projectName="BudgetBuddy" 
        subHeading="Industry: Travel and Hospitality" 
        description="Olumi fintech development services offered robust financial solutions to businesses, making their financial operations streamlined. From enhanced access to capital and financial data management to consistent cash flow and regulated revenue, we brought financial solutions according to the unique needs of your business powered by the latest technologies.
 

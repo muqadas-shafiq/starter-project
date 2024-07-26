@@ -1,14 +1,16 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import Images from '../../data'
 const Resorces = ({
   heading = 'Our work',
   subHeading = 'From concept to success: see our solutions in action',
   projectName = 'Uni Hub',
   description = 'MayoTech created an outstanding and multipurpose campus platform for a client. Whether you want to know about the events happening in the campus, or looking to get some services done or simply wish to buy or sell some stuff, UniHub got you covered.',
   moreDes = 'We ensured to bring scalability to the marketplace making it easy for them to handle all scales of transactions.',
-  src = "/workImg.jpeg" ,
+  src = Images?.workImg ,
   to= "/work"
 }) => {
+  
   return (
     <div className='text-secondary min-h-screen w-full px-6 lg:px-28 py-10 font-poppins flex lg:flex-row flex-col justify-between items-center gap-10'>
       <div className='lg:w-1/2'>

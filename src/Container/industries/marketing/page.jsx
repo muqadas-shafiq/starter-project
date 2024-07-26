@@ -4,7 +4,7 @@ import BookACallButton from "../../../components/BookACallButton";
 import GetConsultingSection from "../../../components/GetConsultingSection";
 import ServiceCardTwo from "../../../components/ServiceCardTwo";
 import Resorces from "../../../components/Home/Resorces";
-
+import Images from "../../../data";
 import ServiceCard from "../../../components/ServiceCard";
 import BenefitsUs from "../../services/BenefitsWorkWithUs";
 import { BiLastPage, BiSolidBullseye } from "react-icons/bi";
@@ -22,6 +22,7 @@ import { FaPagelines } from "react-icons/fa";
 import { AiOutlineAccountBook } from "react-icons/ai";
 export default function Marketing (){
   const [hoveredId, setHoveredId] = useState(null);
+  const {marketing} = Images
   const subServicesTwo = [
     {
       id: 1,
@@ -212,7 +213,7 @@ const subServicesThree = [
     </div>
         <BenefitsUs/>
        <Resorces 
-       heading="Our expertise in marketing industry" src="/industries/marketing.jpg" projectName="Market Maven" 
+       heading="Our expertise in marketing industry" src={marketing} projectName="Market Maven" 
        subHeading="Industry: Digital Marketing, Retail" 
        description="While developing our high-quality marketing solution we ensured that the business gets the boost it deserves to reach more audience and enhance sales. " moreDes="Our tailored marketing software solutions will provide fully functional web and apps with integrated tools and analytics for them to track, monitor, and optimise the key metrics for boosting online growth. "
        href="/work/marketing"
