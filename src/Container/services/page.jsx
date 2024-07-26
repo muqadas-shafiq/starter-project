@@ -96,7 +96,7 @@ const Services = () => {
           </div> */}
         </div>
       </div>
-      <div className="py-20 grid lg:grid-cols-2 gap-10 lg:px-20 bg-gray-200">
+      <div className="py-20 grid lg:grid-cols-2 gap-10 lg:px-20 bg-white">
         {subServicesTwo.map((service) => (
           <ServiceCard
             key={service.id}
