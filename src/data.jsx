@@ -10,10 +10,10 @@ import webdev from "./assets/webdev.png";
 import whatssapp from "./assets/whatsapp.png";
 import workImg from "./assets/workImg.jpeg";
 import education from "./assets/industries/education.jpeg";
-import finance from "./assets/industries/finance.png";
+import finance from "./assets/industries/finance.jpg";
 import health from "./assets/industries/health.jpeg";
 import marketing from "./assets/industries/marketing.jpg";
-import travel from "./assets/industries/travel.png";
+import travel from "./assets/industries/travel.jpg";
 import food from "./assets/industries/food.jpg"
 const Images = {
   groupTwo: groupTwo,
