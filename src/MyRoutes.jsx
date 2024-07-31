@@ -29,6 +29,14 @@ import Market from "./Container/industries/marketing/page"
 import Travel from "./Container/industries/travel/page"
 import Health from "./Container/industries/healt-care/page"
 import Food from "./Container/industries/food/page"
+import OurTeam from './Container/OurTeam/OurTeam'
+import AmirIlyas from './Container/OurTeam/AmirIlyas'
+import Hamza from './Container/OurTeam/Hamza'
+import Raja from './Container/OurTeam/Raja'
+import Umar from './Container/OurTeam/Umar'
+import PrivacyPolicy from "./Container/privacy-policy/page"
+import Conditions from "./Container/terms-condition/page"
+import Cookie from "./Container/cookies/page"
 const MyRoutes = () => {
   return (
     <div>
@@ -62,6 +70,14 @@ const MyRoutes = () => {
         <Route element={<Travel/>} path="/industries/travel"/>
         <Route element={<Health/>} path="/industries/healt-care"/>
         <Route element={<Food/>} path="/industries/food"/>
+        <Route element={<OurTeam/>} path="/our-team"/>
+        <Route element={<AmirIlyas/>} path="/our-team/Founder"/>
+        <Route element={<Hamza/>} path="/our-team/designer"/>
+        <Route element={<Raja/>} path="/our-team/seo-team-lead"/>
+        <Route element={<Umar/>} path="/our-team/techniqal-advisor"/>
+        <Route element={<Cookie/>} path="/cookies"/>
+        <Route element={<PrivacyPolicy/>} path="/privacy-policy"/>
+        <Route element={<Conditions/>} path="/terms-condition"/>
         </Routes>
     </div>
   )

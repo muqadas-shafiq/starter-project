@@ -163,7 +163,7 @@ export default function WebDeb() {
       />
       <BenefitsUs />
 
-      <div className=" min-h-screen py-20 lg:px-20 p-6 flex flex-col justify-center items-center">
+      <div className=" min-h-screen py-20 lg:px-20 p-6 flex flex-col justify-center items-center text-secondary">
         <h1 className=" text-4xl font-heading font-semibold mb-10">
           Web Development Stacks{" "}
         </h1>

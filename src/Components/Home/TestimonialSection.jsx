@@ -13,7 +13,7 @@ import { FaQuoteRight } from "react-icons/fa6";
 import './styles.css';
 
 // import required modules
-import { EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const TestimonialSlider = () => {
   const {Profile} = Images
@@ -41,7 +41,25 @@ const reviews = [
     name: "S.S Security Corporation",
     p2 : "lorem",
     review: "I'm delighted with the service. The group exceeded my expectations and satisfied our objectives with personalized service."
-  }
+  },
+  {
+    id:5,
+    name: "Sania Aftab, CEO, GreenEarth",
+    p2 : "lorem",
+    review: "Olumi Tech Company's web development team created a stunning website that perfectly captures our goal. We highly recommend their services"
+  },
+  {
+    id:6,
+    name: "Owais Qaimkhani - Product Manager, FutureGadgets.",
+    p2 : "lorem",
+    review: "We were impressed by Olumi Tech Company's innovative approach to our AR project. Their team delivered a cutting-edge solution that exceeded our expectations, resulting in a significant increase in customer engagement. "
+  },
+  {
+    id:7,
+    name: "Danish, Training Manager, AeroTech",
+    p2 : "lorem",
+    review: "We partnered with Olumi Tech Company to develop a custom VR program for our employees.  Their AR/VR expertise is unparalleled, and we look forward to future collaborations."
+  },
 ]
   return (
 <div className=' min-h-screen flex flex-col justify-center bg-white'>
@@ -59,17 +77,21 @@ const reviews = [
 <Swiper
         spaceBetween={30}
         effect={'fade'}
+        autoplay={{ // Add autoplay settings
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
         navigation={true}
         pagination={{
           clickable: true,
         }}
-        modules={[EffectFade, Navigation, Pagination]}
-        className="mySwiper lg:px-20 flex justify-start flex-col items-start"
+        modules={[EffectFade, Navigation, Pagination, Autoplay]}
+        className={`mySwiper h-[300px] lg:px-20 flex justify-start flex-col items-start`}
       >
       {reviews.map(review=> (
           <SwiperSlide key={review?.id} className=' shadow-md shadow-gray-200 flex flex-col items-start py-10  px-12   lg:px-20 justify-start font-poppins'>
           <div className=' flex gap-4 items-start' >
-           <img src={Profile} alt="helo" className=' rounded-full w-16'  />
+           {/* <img src={Profile} alt="helo" className=' rounded-full w-16'  /> */}
           <div className=' flex flex-col items-start'>
           <p className=' font-semibold text-forth'>{review.name}</p>
           <p>⭐⭐⭐⭐⭐</p>

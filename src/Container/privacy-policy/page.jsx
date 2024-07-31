@@ -354,7 +354,7 @@ const PrivacyPolicy = () => {
                 deal with any suspected data breach. If you suspect any misuse
                 or loss or unauthorised access to your Data, please let us know
                 immediately by contacting us via this e-mail address:
-                info@Olumi.com.
+                www.olumitech.com
               </li>
               <br />
               <li>

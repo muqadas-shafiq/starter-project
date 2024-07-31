@@ -64,25 +64,9 @@ export default function UIUX(){
           heading: "All-Inclusive User Tests",
           description: "User testing is an integral part of our design process, which ensures that all our solutions meet user expectations and preferences. Our scenarios tests and real-world evaluations improve the user experience to boost conversions and retention rates."
         },
-        {
-          id: 8,
-          icon: TbDirectionSignOff,
-          heading: "Redesign",
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis a ad amet, quia fugiat consequuntur totam saepe ipsa, necessitatibus temporibus, nam eveniet reiciendis soluta odio dignissimos quibusdam accusantium quam?"
-        },
-        {
-          id: 9,
-          icon: IoLogoDesignernews,
-          heading: "User-Centric Interface Design",
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis a ad amet, quia fugiat consequuntur totam saepe ipsa, necessitatibus temporibus, nam eveniet reiciendis soluta odio dignissimos quibusdam accusantium quam?"
-        },
-        {
-          id: 10,
-          icon: PiUserCircleCheckDuotone,
-          heading: "User Testing",
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis a ad amet, quia fugiat consequuntur totam saepe ipsa, necessitatibus temporibus, nam eveniet reiciendis soluta odio dignissimos quibusdam accusantium quam?"
-        },
-        
+       
+       
+       
       ]
    
     return(

@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 
-
+import Images from "../data";
 import { Link } from "react-router-dom";
 import {
   IoIosArrowDown,
@@ -15,6 +15,7 @@ import MegaDropDownIndustries from "./MegaDropDownForIndustries";
 
 
 const Navbar = () => {
+  const {LOGO} = Images
   const [hovered, setHovered] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
@@ -56,15 +57,19 @@ const Navbar = () => {
 
   return (
     <div className={`fixed w-full z-10 text-secondary bg-fifth`}>
-      <div className="flex justify-center  items-center px-1 md:px-28 py-5">
-      
+      <div className="flex justify-between  items-center px-1 md:px-28 py-5">
+     <Link to="/">
+     <div>
+        <img src={LOGO} alt="LOGO" width={200} />
+      </div>
+     </Link>
         <div className="md:hidden">
           <button onClick={toggleMenu}>
             {menuOpen ? <IoIosClose size={30} /> : <IoIosMenu size={30} />}
           </button>
         </div>
         <div className={`hidden md:flex gap-6 font-semibold`}>
-          <ul className="flex gap-6 font-semibold">
+          <ul className="flex gap-6 font-semibold text-lg">
             <Link
               to={"/"}
               onMouseEnter={() => handleMouseEnter("home")}
@@ -143,20 +148,31 @@ const Navbar = () => {
             >
               Our Work
             </Link>
+            <Link
+              to={"/our-team"}
+              onMouseEnter={() => handleMouseEnter("our-team")}
+              onMouseLeave={handleMouseLeave}
+              className={`${hovered === "our-team" ? "text-tirtry" : ""}`}
+            >
+              Our Team
+            </Link>
 
          
-            <Link
+           
+          
+          </ul>
+         
+        </div>
+        <div className="bg-tirtry text-secondary font-semibold font-poppins tracking-wider py-2 px-3 rounded lg:flex hidden">
+          <Link
               to={"/contact"}
               onMouseEnter={() => handleMouseEnter("contact")}
               onMouseLeave={handleMouseLeave}
-              className={`${hovered === "contact" ? "text-tirtry" : ""}`}
+              className={`${hovered === "contact" ? "text-black" : ""}`}
             >
               Contact
             </Link>
-          
-          </ul>
-        </div>
-     
+          </div>
       </div>
       {menuOpen && (
         <div className="md:hidden flex flex-col items-start bg-white px-2 text-black">
@@ -194,6 +210,9 @@ const Navbar = () => {
           </div>
           <Link to={"/work"} className="py-1" onClick={toggleMenu}>
             Our Work
+          </Link>
+          <Link to={"/our-team"} className="py-1" onClick={toggleMenu}>
+            Our Team
           </Link>
          
        

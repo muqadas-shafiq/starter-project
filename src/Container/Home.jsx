@@ -4,7 +4,7 @@ import ExploreMeButton from "../components/ExploreMeButton";
 import GetandEstimateButtn from "../components/GetandEstimateButtn";
 import OurServicesSection from "../components/Home/OurServicesSection";
 import CloudSection from "../components/Home/CloudSection";
-
+import { ReactTyped } from "react-typed";
 import Resorces from "../components/Home/Resorces";
 import TestimonialSlider from "../components/Home/TestimonialSection";
 import TrustedBy from "../components/Home/TrustedBy";
@@ -16,37 +16,47 @@ const Home = () => {
   return (
     <div>
 <ParticlesComponent id="particles"/>
-<div className="divBg flex-col lg:flex-row text-center flex items-center justify-center  max-w-full    lg:pt-10 min-h-screen lg:px-28 px-6 py-6 mx-auto">
-        <div className=" lg:w-[850px] lg:mt-10 mt-16">
+<div className="divBg flex-col lg:flex-row text-start flex items-center lg:justify-start justify-center  max-w-full    lg:pt-10 min-h-screen lg:px-28 px-6 py-6 mx-auto">
+        <div className="  lg:mt-10 mt-16">
           <p
             data-aos="fade-down"
             data-aos-duration="900"
             className=" font-poppins  text-secondary font-semi-bold"
           >
-           Accelerate Business Growth with Tailored Solutions
+
+OlumiTech - Your technology partner for a brighter future
  
 
           </p>
-          <h1
-            data-aos="fade-down"
-            data-aos-duration="800"
-            className="text-secondary text-2xl lg:text-4xl py-4 font-overlock font-bold 
-            "
-          >
-             At Olumi, we specialize in creating tailored software development services that address the unique challenges and goals of businesses across various sectors. Our expert team delivers comprehensive,
-            
-
-           
-            {/* <br /> */}
-            <span className=" text-tirtry">
-             {" "}industry-leading solutions
-
-            </span>
-          </h1>
+          <div
+  data-aos="fade-down"
+  data-aos-duration="800"
+  className="text-secondary text-4xl lg:text-7xl py-4 font-overlock font-bold"
+>
+  At Olumi, we specialize
+  <div className="flex items-center">
+    <span>in{" "}</span>
+    <span className="ml-2 text-3xl lg:text-7xl"> {/* Adjust margin as needed */}
+      <ReactTyped
+        strings={[
+          "Software Development",
+          "Digital Designs",
+          "Mobile Development",
+        ]}
+        typeSpeed={40}
+        backSpeed={50}
+        showCursor={false}
+        loop
+        className="text-tirtry"
+      />
+    </span>
+  </div>
+  <span>Services</span>
+</div>
 
           <div
            
-            className=" mt-4 flex gap-4 justify-center items-center"
+            className=" mt-4 flex gap-4 justify-start items-center"
           >
             <BookACallButton />
             <GetandEstimateButtn/>

@@ -16,8 +16,8 @@ const Cookie = () => {
             <ol>
               <ul className="px-10">
                 <li>
-               1. Infolatch Ltd (we or us or our)uses cookies when you visit our 
-website, <Link className=" underline text-forth" to="www.infolatch.uk">Website</Link> (the Website)
+               1. OlumiTech Ltd (we or us or our)uses cookies when you visit our 
+website, <Link className=" underline text-forth" to="www.olumitech.com">Website</Link> (the Website)
 to help customise the Website and improve your experience using the Website
 
 {" "}
@@ -25,7 +25,7 @@ to help customise the Website and improve your experience using the Website
                 <br />
                 <li>
                   2. This Policy applies between you, the user of this Website,
-                  and us, Infolatch Ltd, the ovmer and provider of this Website.{" "}
+                  and us, OlumiTech Ltd, the ovmer and provider of this Website.{" "}
                 </li>{" "}
                 <br />
                 <li>
@@ -40,7 +40,7 @@ to help customise the Website and improve your experience using the Website
                 <br />
                 <li>
                   4. This Cookie Policy should be read alongside, and in
-                  addition to, our Privacy Policy, which can be found at:<Link className=" underline text-forth" to="www.infolatch.uk">Website</Link>{" "}
+                  addition to, our Privacy Policy, which can be found at:<Link className=" underline text-forth" to="www.OlumiTech.uk">Website</Link>{" "}
                 </li>{" "}
                 <br />
               </ul>
@@ -67,7 +67,7 @@ to help customise the Website and improve your experience using the Website
                   the information obtained from and stored in cookies. For more
                   information on how such personal information is handled and
                   stored, refer to our Privacy Policy which is available online
-                  at:<Link className=" underline text-forth" to="www.infolatch.uk">Website</Link>{" "}
+                  at:<Link className=" underline text-forth" to="www.OlumiTech.uk">Website</Link>{" "}
                 </li>{" "}
                 <br />
               </ul>
@@ -198,7 +198,7 @@ to help customise the Website and improve your experience using the Website
               <br />
               <ul className="px-10">
                 <li>
-                  15. Infolatch Ltd resewes the right to change this Cookie
+                  15. OlumiTech Ltd resewes the right to change this Cookie
                   Policy as we may deem necessaiY from time to time or as may be
                   required by law. Any changes wfll be immediately posted on the
                   Website and you are deemed to have accepted the terms of the
@@ -213,7 +213,7 @@ to help customise the Website and improve your experience using the Website
               <br />
               <ul className="px-10">
                 <li>
-                  16- The Website is owned by Infolatch Ltd incorporated in
+                  16- The Website is owned by OlumiTech Ltd incorporated in
                   England and Wales with registered number 14763673 whose
                   registered office is at Suite 4787, Unit 3A 34-35, Hatton
                   Garden Holbom, London, ECIN OX, England.
@@ -588,9 +588,9 @@ vertising displayed on it more relevant to your interests.</td>
                 <li>
                   47. Further information about the Service Provider&apos;s
                   approach to data protection are specified in its Data
-                  Protection Policy, which can be found at www.infolatch.com.
+                  Protection Policy, which can be found at www.OlumiTech.com.
                   For any enquiries or complaints regarding data privacy, you
-                  can email: info@infolatch.com.
+                  can email: info@OlumiTech.com.
                 </li>
                 <br />
               </ul>

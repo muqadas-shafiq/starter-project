@@ -1,8 +1,8 @@
 // data.jsx
 import groupTwo from "./assets/group2.jpeg";
 import group from "./assets/group.jpeg";
-import LOGO from "./assets/LOGO.jpeg";
-import LOGOpng from "./assets/LOGO.png";
+import LOGO from "./assets/LOGO.png";
+import LOGOpng from "./assets/LOGO2.png";
 import Menu from "./assets/menu.png";
 import Profile from "./assets/profile.jpg";
 import singleTwo from "./assets/single2.jpeg";
@@ -15,6 +15,11 @@ import health from "./assets/industries/health.jpeg";
 import marketing from "./assets/industries/marketing.jpg";
 import travel from "./assets/industries/travel.png";
 import food from "./assets/industries/food.jpg"
+import SEoPerson from "./assets/team/SEOPerson.jpg"
+import designerPerson from "./assets/team/Designer.jpg"
+import CEOPerson from "./assets/team/CEO.jpg"
+import FounderPerson from "./assets/team/Founder.jpeg"
+import Techniqal from "./assets/team/Techniqal.png"
 const Images = {
   groupTwo: groupTwo,
   group: group,
@@ -32,6 +37,12 @@ const Images = {
   marketing: marketing,
   travel: travel,
   food: food,
+  FounderPerson:FounderPerson,
+  designerPerson:designerPerson,
+  CEOPerson: CEOPerson,
+  SEoPerson:SEoPerson,
+  Techniqal:Techniqal
+
 
 };
 

@@ -24,12 +24,12 @@ const CloudSection = () => {
   ]
   return (
     <div className="bg-secondary w-full min-h-screen px-6 lg:px-20 py-20 flex items-center justify-center flex-col font-poppins z-0 ">
-<h1 className=" text-5xl text-fifth font-semibold font-heading text-center">Our development process is designed to efficiently deliver high-quality, customized solutions.
+<h1 className="text-3xl lg:text-5xl text-fifth font-semibold font-heading text-center">Our development process is designed to efficiently deliver high-quality, customized solutions.
 </h1>
 {/* <p className=" font-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> */}
-<div className=" mt-20 flex flex-wrap gap-10 text-center items-center justify-center">
+<div className=" mt-20 grid lg:grid-cols-4 grid-cols-2 gap-5 lg:gap-40 text-center items-center justify-center">
   {cloudData.map(item =>(
-    <div key={item.id} className=" flex flex-col items-center justify-center gap-4 w-[250px] ">
+    <div key={item.id} className=" flex flex-col items-center justify-center gap-4 max-w-[250px] ">
     <div className=" p-4 bg-[#e28181] rounded-full ">
       <p className=" p-4 text-3xl bg-[#B43F3F] rounded-full text-white"><item.icon/></p>
     </div>

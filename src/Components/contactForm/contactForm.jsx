@@ -1,5 +1,7 @@
 
 import { useState } from "react";
+import { BiLogoGmail } from "react-icons/bi";
+import { TbPhoneCalling } from "react-icons/tb";
 import ParticlesComponent from "../particles";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -40,18 +42,26 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="min-h-screen  flex justify-center items-center  text-secondary lg:px-20 p-6">
+    <div className="min-h-screen  lg:flex justify-center items-center  text-secondary lg:px-20 p-6">
        <ParticlesComponent id="particles"/>
-      <div className="flex justify-between">
-        <div className=" lg:w-1/2 hidden lg:flex lg:flex-col">
-          <h1 className=" text-6xl font-semibold font-poppins capitalize mt-40">
-            Tell us about your project
+      <div className="lg:flex justify-between">
+        <div className=" lg:w-1/2 flex flex-col mt-20 pr-10">
+          <h1 className="text-3xl lg:text-4xl font-semibold font-heading capitalize tracking-wider  ">
+          We&apos;re here to help! Reach out to us directly via email or give us a call on WhatsApp to discuss your project. We look forward to hearing from you!
           </h1>
-          <p className=" mt-10 font-poppins w-[500px]">
-            In our brief consultation, protected by an NDA, we will assess your
-            product for critical design issues and outline potential steps that
-            are tailored specifically to your goals
-          </p>
+         <div className="lg:flex gap-4 items-center space-y-3 py-10 text-black ">
+          <div className=" flex flex-col items-start bg-white p-5 rounded space-y-3 w-[280px]">
+            <h1 className=" text-4xl text-tirtry "><BiLogoGmail/></h1>
+            <p className=" text-lg tracking-wider font-semibold font-poppins">Olumitech@gmail.com</p>
+          </div>
+          <div className=" flex flex-col items-start bg-white p-5 rounded space-y-3 w-[280px] ">
+            <h1 className=" text-4xl text-tirtry ">
+              <TbPhoneCalling/>
+             
+            </h1>
+            <p  className=" text-lg tracking-wider font-poppins font-semibold">+92 312 4401327</p>
+          </div>
+         </div>
         </div>
         <div className=" lg:w-1/2 px-6">
           <form onSubmit={handleSubmit}>

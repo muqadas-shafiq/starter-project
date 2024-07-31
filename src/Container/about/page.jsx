@@ -9,7 +9,7 @@ import ParticlesComponent from "../../components/particles";
 import BenefitsUs from "../services/BenefitsWorkWithUs";
 
 const AboutPage = () => {
-  const {groupTwo} = Images
+  const {groupTwo,singleTwo, group} = Images
   return (
     <>
       <div className="">
@@ -37,7 +37,7 @@ const AboutPage = () => {
       </div>
       <div>
         <img
-          src="/group.jpeg"
+          src={group}
           alt="helo"
           className=" w-full minh-screen"
           width={1000}
@@ -78,10 +78,10 @@ const AboutPage = () => {
           </p>
         </div>
         <div className=" lg:w-1/2 flex items-end justify-end bg-white">
-          <img src="/single2.jpeg" alt="helo" width={500} height={400} />
+          <img src={singleTwo} alt="helo" width={500} height={400} />
         </div>
       </div>
-      <div className=" flex flex-col lg:flex-row justify-between items-start py-20 lg:px-28 p-6 gap-10 min-h-screen w-full">
+      <div className=" flex flex-col lg:flex-row justify-between items-start py-20 lg:px-28 p-6 gap-10 min-h-screen w-full bg-secondary">
         <div className=" lg:w-1/2">
           <img src={groupTwo} alt="helo" width={500} height={500} />
         </div>
