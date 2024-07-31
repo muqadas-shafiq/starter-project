@@ -14,14 +14,14 @@ const OurTeam = () => {
 
   return (
     <div className='w-full min-h-screen bg-[#f6f2ec] flex flex-col justify-center lg:px-20'>
-      <div className="flex justify-between items-center">
-        <div className='w-1/3'>
+      <div className="lg:flex justify-between items-center">
+        <div className='lg:w-1/3'>
           <h1 
           data-aos="fade-down" 
           data-aos-duration="900" 
-          className='text-9xl font-poppins'>MEET <span className='text-tirtry italic'>OUR</span> TEAM</h1>
+          className='lg:text-9xl text-4xl font-poppins'>MEET <span className='text-tirtry italic'>OUR</span> TEAM</h1>
         </div>
-        <div className='w-2/3'>
+        <div className='lg:w-2/3'>
           <Swiper
             effect={'coverflow'}
             grabCursor={true}
