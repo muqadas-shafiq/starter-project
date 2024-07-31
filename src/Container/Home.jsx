@@ -41,7 +41,7 @@ OlumiTech - Your technology partner for a brighter future
         strings={[
           "Software Development",
           "Digital Designs",
-          "Mobile Development",
+          "Apps Development",
         ]}
         typeSpeed={40}
         backSpeed={50}
