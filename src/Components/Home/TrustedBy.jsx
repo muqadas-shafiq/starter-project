@@ -38,12 +38,12 @@ const TrustedBy = () => {
      data-aos-duration="600" className='flex lg:flex-row flex-col gap-20 justify-between w-full mt-20'>
     <Cards
    
-    number={"100+"}
+    number={"105+"}
     text={"We have earned loyal clients by completing projects successfully while ensuring customer satisfaction."}
     />
     <Cards
   
-    number={"500+"}
+    number={"195+"}
     text={"Our collaborations with reputable businesses have helped us become a trustworthy digital firm.  "}
     />
     <Cards

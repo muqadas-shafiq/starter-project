@@ -228,7 +228,7 @@ const industries = [
  "
        href="/work/health"
        />
-       <GetConsultingSection heading={" Interested in different services?"} text1={"Look no further. Your challenge, our expertise."} text2={"Schedule a call to share your idea!"}/>
+       {/* <GetConsultingSection heading={" Interested in different services?"} text1={"Look no further. Your challenge, our expertise."} text2={"Schedule a call to share your idea!"}/> */}
         </>
     )
 }

@@ -6,7 +6,7 @@ const ServiceCardTwo = ({ service, hoveredId, setHoveredId,btnText }) => {
     <div
       onMouseEnter={() => setHoveredId(service.id)}
       onMouseLeave={() => setHoveredId(null)}
-      className='p-6 bg-secondary shadow-md border-t-4 border-tirtry'
+      className='p-6 bg-white shadow-md border-t-4 border-tirtry'
     >
       <div className='flex gap-5 items-center '>
         <p className={`transition-all duration-150 ease-in p-2 rounded-lg text-4xl ${hoveredId === service.id ? 'bg-white text-forth' : 'bg-forth text-secondary '}`}>

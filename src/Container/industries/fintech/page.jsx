@@ -202,7 +202,7 @@ export default function Fintech (){
 
   
         </div>
-        <h1 className=' lg:px-20 p-6 pt-20 text-4xl font-heading font-bold text-forth'>Our Dynamic Range of Fintech Solutions to Accelerate Your Growth
+        <h1 className='bg-secondary lg:px-20 p-6 pt-20 text-4xl font-heading font-bold text-forth'>Our Dynamic Range of Fintech Solutions to Accelerate Your Growth
         </h1>
         <div className='py-20 grid lg:grid-cols-2 gap-10 lg:px-20 p-6 bg-secondary'>
       {subServicesTwo.map(service => (
@@ -218,7 +218,7 @@ export default function Fintech (){
    
        
     <GetConsultingSection heading={" Interested in different services?"} text1={"Look no further. Your challenge, our expertise."} text2={"Schedule a call to share your idea!"}/>
-    <div className="py-20 lg:px-20 p-6">
+    <div className="py-20 lg:px-20 p-6 bg-secondary">
       <h1 className=" py-10 text-4xl font-heading font-semibold text-forth">Our Fintech Services will Steer you through all Hurdles
       </h1>
     <div className=' grid lg:grid-cols-2 gap-10 bg-secondary '>
@@ -233,11 +233,12 @@ export default function Fintech (){
       ))}
     </div>
     </div>
+ 
         <BenefitsUs/>
         <Resorces 
        heading="Our expertise in Fintech industry" 
        src={finance} projectName="BudgetBuddy" 
-       subHeading="Industry: Travel and Hospitality" 
+       subHeading="Industry: Fintech" 
        description="Olumi fintech development services offered robust financial solutions to businesses, making their financial operations streamlined. From enhanced access to capital and financial data management to consistent cash flow and regulated revenue, we brought financial solutions according to the unique needs of your business powered by the latest technologies.
 
 
@@ -247,7 +248,7 @@ export default function Fintech (){
  "
        href="/work/finance"
        />
-       <GetConsultingSection heading={" Interested in different services?"} text1={"Look no further. Your challenge, our expertise."} text2={"Schedule a call to share your idea!"}/>
+       
         </>
     )
 }

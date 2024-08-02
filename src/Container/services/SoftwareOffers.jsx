@@ -121,7 +121,7 @@ const SoftwareOffers = () => {
     <GetConsultingSection heading={"Are you ready for high-end, tailored software solutions for your enterprise or startup? Contact us now! "} text1={"Look no further. Your challenge, our expertise."} text2={"Schedule a call to share your idea!"}/>
     <BenefitsUs/>
     <Resorces/>
-    <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-gray-100'>
+    <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-white'>
       <h1 className='text-4xl font-heading font-bold text-forth lg:ppagew-[700px]'>Software Development
       Challenges we solve for you </h1>
       <div className='py-20 grid lg:grid-cols-2 gap-10'>

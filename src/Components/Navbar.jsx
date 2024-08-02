@@ -170,12 +170,12 @@ const Navbar = () => {
               onMouseLeave={handleMouseLeave}
               className={`${hovered === "contact" ? "text-black" : ""}`}
             >
-              Contact
+              Contact Us
             </Link>
           </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden flex flex-col items-start bg-white px-2 text-black">
+        <div className="md:hidden flex flex-col items-start bg-fifth px-2 text-white">
           <Link to={"/"} className="py-1" onClick={toggleMenu}>
             Home
           </Link>
@@ -217,7 +217,7 @@ const Navbar = () => {
          
        
           <Link to={"/contact"} className="py-1" onClick={toggleMenu}>
-            Contact
+            Contact Us
           </Link>
         
         </div>

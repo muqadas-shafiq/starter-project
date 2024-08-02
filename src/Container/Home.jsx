@@ -42,6 +42,11 @@ OlumiTech - Your technology partner for a brighter future
           "Software Development",
           "Digital Designs",
           "Apps Development",
+          "3D / VR / AR",
+          "SEO",
+          "Digital Marketing",
+          " AI Solution",
+          "Cloud Solution"
         ]}
         typeSpeed={40}
         backSpeed={50}

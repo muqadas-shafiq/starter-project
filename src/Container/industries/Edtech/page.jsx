@@ -234,7 +234,7 @@ export default function EdTech() {
       </div>
       <BenefitsUs />
       <Resorces 
-       heading="Our EdTech in food industry" 
+       heading="Our expertise In  EdTech  industry" 
        src={education}
         projectName="EduPortal" 
        subHeading="Industry: Education  " 

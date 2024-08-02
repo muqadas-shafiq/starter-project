@@ -157,7 +157,7 @@ export default function HealthWork(){
     </div>
   
     <GetConsultingSection heading={" Interested in different services?"} text1={"Look no further. Your challenge, our expertise."} text2={"Schedule a call to share your idea!"}/>
-    <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-gray-100'>
+    <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-white'>
         <h1 className='text-4xl font-heading font-bold text-forth w-[700px]'>Our Approach
         </h1>
         <div className='py-20 grid lg:grid-cols-2 gap-10'>
@@ -180,7 +180,7 @@ export default function HealthWork(){
        
       </div>
       <GetConsultingSection heading={"Got an app idea that needs expert hands? "} text1={"Reach out to us today to start transforming your concept into a reality. "}/>
-      <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-gray-100'>
+      <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-white'>
       <h1 className='text-4xl font-heading font-bold text-forth'>Results  </h1>
       <div className='py-20 grid lg:grid-cols-2 gap-10'>
         {Results.map(service => (

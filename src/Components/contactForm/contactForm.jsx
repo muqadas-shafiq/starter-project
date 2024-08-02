@@ -45,8 +45,9 @@ const ContactForm = () => {
     <div className="min-h-screen  lg:flex justify-center items-center  text-secondary lg:px-20 p-6">
        <ParticlesComponent id="particles"/>
       <div className="lg:flex justify-between">
-        <div className=" lg:w-1/2 flex flex-col mt-20 pr-10">
-          <h1 className="text-3xl lg:text-4xl font-semibold font-heading capitalize tracking-wider  ">
+        <div className=" lg:w-1/2 flex flex-col mt-20 pr-10 border-r-2  border-tirtry">
+        <h1 className=" lg:text-5xl text-3xl mb-10 font-poppins font-bold">Contact Us</h1>
+          <h1 className="text-2xl lg:text-3xl font-semibold font-heading capitalize tracking-wider  ">
           We&apos;re here to help! Reach out to us directly via email or give us a call on WhatsApp to discuss your project. We look forward to hearing from you!
           </h1>
          <div className="lg:flex gap-4 items-center space-y-3 py-10 text-black ">
@@ -63,9 +64,10 @@ const ContactForm = () => {
           </div>
          </div>
         </div>
-        <div className=" lg:w-1/2 px-6">
+        <div className=" lg:w-1/2 px-6 mt-20">
+        <h1 className=" lg:text-5xl text-3xl mb-10 font-poppins font-bold text-tirtry">Get an Estimate</h1>
           <form onSubmit={handleSubmit}>
-            <div className="flex flex-wrap gap-10 mt-20 justify-between">
+            <div className="flex flex-wrap gap-10  justify-between">
               <input
                 type="text"
                 name="name"

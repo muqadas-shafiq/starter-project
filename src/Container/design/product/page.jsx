@@ -121,7 +121,7 @@ export default function Product() {
           </div>
         </div>
       </div>
-      <div className="lg:px-20 p-6 py-20 min-h-screen text-primary bg-gray-100">
+      <div className="lg:px-20 p-6 py-20 min-h-screen text-primary bg-white">
         <h1 className="text-4xl font-heading font-bold text-forth">
           Design Services that Innovate Your Product through Olumi
         </h1>

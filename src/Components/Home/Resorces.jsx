@@ -8,7 +8,7 @@ const Resorces = ({
   description = 'Olumitech created an outstanding and multipurpose campus platform for a client. Whether you want to know about the events happening in the campus, or looking to get some services done or simply wish to buy or sell some stuff, UniHub got you covered.',
   moreDes = 'We ensured to bring scalability to the marketplace making it easy for them to handle all scales of transactions.',
   src = Images?.workImg ,
-  to= "/work"
+  href= "/work"
 }) => {
   
   return (
@@ -27,7 +27,7 @@ const Resorces = ({
         <br />
         <p>{moreDes}</p>
         <div className='py-4'>
-          <Link to={to} className='py-2 px-6 bg-forth text-secondary font-semibold rounded-full'>Case Details</Link>
+          <Link to={href} className='py-2 px-6 bg-forth text-secondary font-semibold rounded-full'>Case Details</Link>
         </div>
       </div>
       <div className='lg:w-1/2 w-full'>

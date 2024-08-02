@@ -82,7 +82,7 @@ export default function AppDev(){
      
       </div>
       </div>
-      <div className='lg:px-20 p-6 py-20 min-h-screen text-primary bg-gray-100'>
+      <div className='lg:px-20 p-6 py-20 min-h-screen text-primary bg-white'>
     <h1 className='text-4xl font-heading font-bold text-forth'>Mobile App Development Services Olumi Offers </h1>
     <div className='py-20 lg:grid grid-cols-2 gap-10'>
       {subServices.map(service => (

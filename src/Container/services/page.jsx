@@ -80,7 +80,7 @@ const Services = () => {
               Experience!
             </h1>
             <p className=" font-poppins pt-6">
-              Info Latch is your go-to software development partner that has
+              OlumiTech is your go-to software development partner that has
               custom solutions for your business/enterprise. We blend our
               expertise with your innovative ideas to tailor a software
               development strategy unique to your business. Empower your

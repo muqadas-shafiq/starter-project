@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from "react-router-dom"
 const GetConsultingSection = ({heading, text1, text2}) => {
   return (
-    <div className='bg-gray-100 flex flex-col justify-center items-center min-h-[500px] px-6 lg:px-20 text-center'>
+    <div className='text-secondary flex flex-col justify-center items-center min-h-[400px] px-6 lg:px-20 text-center'>
       <h1 className='text-3xl lg:text-6xl font-heading capitalize font-semibold'>
      {heading}
       </h1>

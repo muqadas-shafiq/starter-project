@@ -219,7 +219,7 @@ const subServicesThree = [
        description="While developing our high-quality marketing solution we ensured that the business gets the boost it deserves to reach more audience and enhance sales. " moreDes="Our tailored marketing software solutions will provide fully functional web and apps with integrated tools and analytics for them to track, monitor, and optimise the key metrics for boosting online growth. "
        href="/work/marketing"
        />
-       <GetConsultingSection heading={" Interested in different services?"} text1={"Look no further. Your challenge, our expertise."} text2={"Schedule a call to share your idea!"}/>
+       {/* <GetConsultingSection heading={" Interested in different services?"} text1={"Look no further. Your challenge, our expertise."} text2={"Schedule a call to share your idea!"}/> */}
         </>
     )
 }

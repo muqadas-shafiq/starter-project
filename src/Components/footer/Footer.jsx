@@ -17,19 +17,20 @@ export default function Footer(){
 
               <div className="lg:flex justify-between items-start w-full">
               <div >
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6268083081222!2d-0.11056392414385266!3d51.520062309779206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b4dd9bf3689%3A0x81e904e52e4cb8f6!2s4787%203a%2C%2034-35%20Hatton%20Garden%2C%20London%20EC1N%208DX%2C%20UK!5e0!3m2!1sen!2s!4v1719565020122!5m2!1sen!2s" height="300" allowFullScreen="" width={300}referrerPolicy="no-referrer-when-downgrade"></iframe>
+                 
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.270255705544!2d74.36566117469502!3d31.489254548680364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905cfc9af1c07%3A0x8a1fa027f6bf8d3f!2s1566%2C%20F9Q9%2BP84%2C%20124%20Walton%20Rd%2C%20Madina%20Colony%2C%20Lahore%2C%20Punjab%2054000%2C%20Pakistan!5e0!3m2!1sen!2s!4v1722575445591!5m2!1sen!2s" width="300" height="300" allowFullScreen="" referrerPolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                   <div>
                       <h1 className="text-2xl font-semibold py-3 text-forth">Contacts</h1>
-                      <ul className="flex flex-col space-y-6">
-                      <li className="flex space-x-2"><IoLocation  className="border-2 border-forth text-primary p-2 rounded-full text-4xl"/><span>1566, 124 Walton Rd, Madina Colony, <br /> Lahore, Punjab 54000<br /></span></li>
+                      <ul className="flex flex-col space-y-6 text-start justify-start">
+                      <li className="flex  items-center space-x-2"><IoLocation  className="border-2 border-forth text-primary p-2 rounded-full text-4xl"/><span>1566, 124 Walton Rd, Madina Colony, <br /> Lahore, Punjab 54000<br /></span></li>
                       
-                          <li className="flex space-x-2"><MdEmail  className="border-2 border-forth text-primary p-2 rounded-full text-4xl"/> <span>contact@Olumi.uk </span></li>
-                          <li className="flex space-x-2"><FaPhoneAlt className="border-2 border-forth text-primary p-2 rounded-full text-4xl"/><span>+92 312 4401327</span></li>
+                          <li className="flex items-center space-x-2"><MdEmail  className="border-2 border-forth text-primary p-2 rounded-full text-4xl"/> <span>contact@Olumi.uk </span></li>
+                          <li className="flex  items-center space-x-2"><FaPhoneAlt className="border-2 border-forth text-primary p-2 rounded-full text-4xl"/><span>+92 312 4401327</span></li>
                           
                       </ul>
                       </div>
-                  <div className="  text-start  flex flex-col">
+                  {/* <div className="  text-start  flex flex-col">
                       <h1 className="text-2xl font-semibold py-3 text-forth">Quick Links</h1>
                       <ul className=" flex flex-col items-start gap-2">
                          <Link to="/">Home</Link>
@@ -42,15 +43,15 @@ export default function Footer(){
                          
                           
                       </ul>
-                  </div>
+                  </div> */}
                  
                  
                   <div className=" lg:text-start flex-flex-col">
                       <h1 className="text-2xl font-semibold py-3 text-forth">Follow Us</h1>
-                      <ul className="flex lg:items-center lg:justify-start space-x-7 mt-8">
-                          <Link to={"/"} className="border-2 border-forth text-primary p-2 rounded-full text-2xl"><FaFacebook/></Link>
-                          <Link to={"/"}className="border-2 border-forth text-primary p-2 rounded-full text-2xl"><FaLinkedin/></Link>
-                          <Link to={"/"}className="border-2 border-forth text-primary p-2 rounded-full text-2xl"><FaSquareXTwitter/></Link>
+                      <ul className="flex flex-col lg:items-center lg:justify-start space-y-8 mt-8">
+                          <Link to={"https://www.facebook.com/profile.php?id=61563866993446"} className="border-2 border-forth text-primary p-2 rounded-full text-2xl"><FaFacebook/></Link>
+                          <Link to={"https://www.linkedin.com/company/olumitech/?viewAsMember=true"}className="border-2 border-forth text-primary p-2 rounded-full text-2xl"><FaLinkedin/></Link>
+                          {/* <Link to={"/"}className="border-2 border-forth text-primary p-2 rounded-full text-2xl"><FaSquareXTwitter/></Link> */}
                       </ul>
                   </div>
               </div>

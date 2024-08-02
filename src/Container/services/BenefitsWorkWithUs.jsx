@@ -50,7 +50,7 @@ export default function BenefitsUs(){
     
     return(
 
-        <div className='px-6 lg:px-20 py-20 min-h-screen text-primary bg-gray-100'>
+        <div className='px-6 lg:px-20 py-20 min-h-screen text-primary bg-white'>
         <h1 className='text-4xl font-heading font-bold text-forth lg:w-[700px]'>Partnering with Olumi brings you: 
         </h1>
         <div className='py-20 lg:grid grid-cols-2 gap-10'>

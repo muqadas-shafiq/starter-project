@@ -47,10 +47,10 @@ const AboutPage = () => {
       <div className=" flex lg:flex-row flex-col justify-between items-start py-20 lg:px-28 p-6 gap-10 min-h-screen w-full bg-white">
         <div className=" lg:w-1/2">
           <h1 className=" text-4xl font-heading mb-4 font-semibold uppercase text-forth">
-            Our story{" "}
+            Our story{" "}5
           </h1>
           <p className=" lg:text-sm">
-            OlumiTech emerged in the technology landscape with a vision to
+            OlumiTech5 emerged in the technology landscape with a vision to
             propel businesses into the digital age. With a foundation built on
             meticulous planning and strategic networking, Olumi has
             established a robust network that ensures service delivery of the

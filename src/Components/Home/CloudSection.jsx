@@ -4,6 +4,7 @@ import { PiAirplaneInFlight } from "react-icons/pi";
 import { SiVorondesign } from "react-icons/si";
 import { GiPlantsAndAnimals } from "react-icons/gi";
 import { GiAbstract039 } from "react-icons/gi";
+import { FaBugSlash } from "react-icons/fa6";
 import { GrDocumentTest } from "react-icons/gr";
 import { SiPlanetscale } from "react-icons/si";
 import { AiTwotoneBuild } from "react-icons/ai";
@@ -19,15 +20,17 @@ const CloudSection = () => {
     {id: 3, name: "Defining", icon : GiAbstract039},
     {id: 4, name: "Building", icon : AiTwotoneBuild},
     {id: 5, name: "Testing", icon : GrDocumentTest},
+    {id: 8, name: "Bug Fixing", icon : FaBugSlash},
     {id: 6, name: "Deployment", icon : SiPlanetscale},
-    {id: 7, name: "Mantainance", icon : FaLayerGroup},
+    {id: 7, name: "Maintenance", icon : FaLayerGroup},
+  
   ]
   return (
     <div className="bg-secondary w-full min-h-screen px-6 lg:px-20 py-20 flex items-center justify-center flex-col font-poppins z-0 ">
 <h1 className="text-3xl lg:text-5xl text-fifth font-semibold font-heading text-center">Our development process is designed to efficiently deliver high-quality, customized solutions.
 </h1>
 {/* <p className=" font-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> */}
-<div className=" mt-20 grid lg:grid-cols-4 grid-cols-2 gap-5 lg:gap-40 text-center items-center justify-center">
+<div className=" mt-20 grid lg:grid-cols-4 grid-cols-2 gap-5 space-y-6 text-center w-full justify-between">
   {cloudData.map(item =>(
     <div key={item.id} className=" flex flex-col items-center justify-center gap-4 max-w-[250px] ">
     <div className=" p-4 bg-[#e28181] rounded-full ">

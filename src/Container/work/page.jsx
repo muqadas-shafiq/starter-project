@@ -112,22 +112,23 @@ export default function Work(){
         <ParticlesComponent id="particles"/>
         <div className=" flex justify-between pt-20 pb-10 lg:gap-10">
         <div className='pt-20 min-h-fit flex justify-center items-start  text-secondary flex-col lg:py-20 lg:pl-20 lg:w-[70%] w-full p-6'>
-            <h1 className=' text-3xl lg:text-6xl  font-poppins tracking-wide font-bold leading-tight'>Uni Hub Services</h1>
+            <h1 className=' text-3xl lg:text-6xl  font-poppins tracking-wide font-bold leading-tight'>Uni Hub </h1>
             <p className=' font-poppins pt-6'>Unihub is the ultimate amalgamation of web and software that brings facilities to your campus life like never before. From events management to marketplace to services of any type, get it all done with unihub effortlessly.
             </p>
             <div  
             className=" flex gap-4 items-center mt-10 font-poppins font-semibold flex-wrap"
     >
-  <p className=" px-6 py-2 border-2 border-secondary  rounded-full font-poppins">Java</p>
-  <p className=" px-6 py-2 border-2 border-secondary  rounded-full font-poppins">Spring Boot</p>
-  <p className=" px-6 py-2 border-2 border-secondary  rounded-full font-poppins">ReactJS</p>
-  <p className=" px-6 py-2 border-2 border-secondary  rounded-full font-poppins">JavaScript</p>
-  <p className=" px-6 py-2 border-2 border-secondary  rounded-full font-poppins">Css</p>
+  <p className=" px-6 py-2 border-2 border-secondary  rounded-full ">Java</p>
+  <p className=" px-6 py-2 border-2 border-secondary  rounded-full ">Spring Boot</p>
+  <p className=" px-6 py-2 border-2 border-secondary  rounded-full ">ReactJS</p>
+  <p className=" px-6 py-2 border-2 border-secondary  rounded-full ">JavaScript</p>
+  <p className=" px-6 py-2 border-2 border-secondary  rounded-full ">Css</p>
   <p className=" px-6 py-2 border-2 border-secondary  rounded-full">Html</p>
   <p className=" px-6 py-2 border-2 border-secondary  rounded-full">Redux</p>
   <p className=" px-6 py-2 border-2 border-secondary  rounded-full">Tailwind Css</p>
   <p className=" px-6 py-2 border-2 border-secondary  rounded-full">MongoDB</p>
   <p className=" px-6 py-2 border-2 border-secondary  rounded-full">React Native</p>
+  <p className=" px-6 py-2 border-2 border-secondary  rounded-full">LARAVEL </p>
 </div>
         </div>
         {/* <div className=' flex items-start justify-end  mr-20  mt-20' >
@@ -135,9 +136,9 @@ export default function Work(){
         </div> */}
         </div>
         </div>
-        <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-gray-100'>
+        <div className='lg:px-20 px-6 py-20 min-h-[600px] text-primary bg-white'>
       <h1 className='text-4xl font-heading font-bold text-forth'>Overview  </h1>
-      <div className='py-20 grid lg:grid-cols-2 gap-10'>
+      <div className='pt-20 grid lg:grid-cols-2 gap-10'>
         {subServices.map(service => (
           <div
             onMouseEnter={() => setHoveredId(service.id)}
@@ -159,12 +160,12 @@ export default function Work(){
     </div>
   
     <GetConsultingSection heading={" Interested in different services?"} text1={"Look no further. Your challenge, our expertise."} text2={"Schedule a call to share your idea!"}/>
-    <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-gray-100'>
+    <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-white'>
         <h1 className='text-4xl font-heading font-bold text-forth w-[700px]'>Our Approach
         </h1>
         <div className='py-20 grid lg:grid-cols-2 gap-10'>
           {subServicesHere.map(service => (
-             <div key={service.id}   className={` max-w-[590px]  min-h-[100px] font-poppins p-6 flex gap-4 transition-all duration-200 shadow-lg cursor-pointer`}>
+             <div key={service.id}   className={` max-w-[590px]  min-h-[100px] font-poppins p-6 flex gap-4 transition-all duration-200 shadow-lg cursor-pointer border-t-2 border-tirtry`}>
              <div className='flex flex-col gap-4 text-start'>
                <div className='flex gap-4 items-center'>
                  <div className='border-2 border-tirtry p-6 flex items-center w-12 justify-center rounded-full h-12'>
@@ -182,7 +183,7 @@ export default function Work(){
        
       </div>
       <GetConsultingSection heading={"Got an app idea that needs expert hands? "} text1={"Reach out to us today to start transforming your concept into a reality. "}/>
-      <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-gray-100'>
+      <div className='lg:px-20 px-6 py-20 min-h-screen text-primary bg-white'>
       <h1 className='text-4xl font-heading font-bold text-forth'>Results  </h1>
       <div className='py-20 grid lg:grid-cols-2 gap-10'>
         {Results.map(service => (

@@ -46,23 +46,23 @@ const OurTeam = () => {
             <SwiperSlide >
               <Link to={"/our-team/Founder"}>
               <img src={CEOPerson} alt='helo' className='absolute' />
-              <div className={`relative flex items-start justify-end flex-col h-full px-4 ${activeIndex === 0 ? 'block' : 'hidden'}`}>
+              <div className={`relative flex items-start justify-end flex-col h-full px-6 ${activeIndex === 0 ? 'block' : 'hidden'}`}>
                 <p data-aos="fade-right"
                 data-aos-duration="900" 
                 className='bg-secondary px-4 py-1 border-b-2 border-tirtry italic'> Founder of OlumiTech</p>
                 <p data-aos="fade-right"
                 data-aos-duration="900" 
                  data-aos-delay="300" className='bg-secondary px-4 py-1 border-b-2 mt-2 border-tirtry '>Amir Ilyas</p>
-                <p data-aos="fade-right" data-aos-delay="400" 
+                {/* <p data-aos="fade-right" data-aos-delay="400" 
                 data-aos-duration="900" 
-                className='bg-secondary px-4 py-1 border-b-2 mt-2 border-tirtry '>Digital Marketing Team Lead</p>
+                className='bg-secondary px-4 py-1 border-b-2 mt-2 border-tirtry '>Digital Marketing Team Lead</p> */}
               </div></Link>
             
             </SwiperSlide>
             <SwiperSlide>
              <Link to="/our-team/seo-team-lead">
              <img src={SEoPerson} alt='helo' className='absolute' />
-              <div className={`relative flex items-start justify-end flex-col h-full px-4 ${activeIndex === 1 ? 'block' : 'hidden'}`}>
+              <div className={`relative flex items-start justify-end flex-col h-full px-6 ${activeIndex === 1 ? 'block' : 'hidden'}`}>
                 {/* <p data-aos="fade-right" className='bg-secondary px-4 py-1 border-b-2 border-tirtry'> </p> */}
                 <p data-aos="fade-right" data-aos-delay="300" className='bg-secondary px-4 py-1 border-b-2 mt-2 border-tirtry '>Raja Waheed</p>
                 <p data-aos="fade-right" data-aos-delay="400" className='bg-secondary px-4 py-1 border-b-2 mt-2 border-tirtry '>SEO Team Lead</p>
@@ -71,7 +71,7 @@ const OurTeam = () => {
             <SwiperSlide>
              <Link to="/our-team/designer">
              <img src={designerPerson} alt='helo' className='absolute' />
-              <div className={`relative flex items-start justify-end flex-col h-full px-4 ${activeIndex === 2 ? 'block' : 'hidden'}`}>
+              <div className={`relative flex items-start justify-end flex-col h-full px-6 ${activeIndex === 2 ? 'block' : 'hidden'}`}>
                 {/* <p data-aos="fade-right" className='bg-secondary px-4 py-1 border-b-2 border-tirtry'> Founder of OlumiTech</p> */}
                 <p data-aos="fade-right" data-aos-delay="300" className='bg-secondary px-4 py-1 border-b-2 mt-2 border-tirtry'>Hamza Ali</p>
                 <p data-aos="fade-right" data-aos-delay="400" className='bg-secondary px-4 py-1 border-b-2 mt-2 border-tirtry'>Graphic design Team Lead</p>
@@ -81,10 +81,10 @@ const OurTeam = () => {
             <SwiperSlide>
             <Link to="/our-team/techniqal-advisor">
             <img src={Techniqal} alt='helo' className='absolute' />
-              <div className={`relative flex items-start justify-end flex-col h-full px-4 ${activeIndex === 3 ? 'block' : 'hidden'}`}>
-                {/* <p data-aos="fade-right" className='bg-secondary px-4 py-1 border-b-2 border-tirtry'> Founder of OlumiTech</p> */}
+              <div className={`relative flex items-start justify-end flex-col h-full px-6 ${activeIndex === 3 ? 'block' : 'hidden'}`}>
+               
                 <p data-aos="fade-right" data-aos-delay="300" className='bg-secondary px-4 py-1 border-b-2 mt-2 border-tirtry'>Umar Meo</p>
-                <p data-aos="fade-right" data-aos-delay="400" className='bg-secondary px-4 py-1 border-b-2 mt-2 border-tirtry'>Technical Advisor Team Lead</p>
+                <p data-aos="fade-right" data-aos-delay="400" className='bg-secondary px-4 py-1 border-b-2 mt-2 border-tirtry'>Technical Advisor </p>
               </div>
             </Link>
             </SwiperSlide>

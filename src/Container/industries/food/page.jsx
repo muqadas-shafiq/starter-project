@@ -252,11 +252,11 @@ export default function Food() {
        moreDes="Our tailored web and app development solutions will provide fully functional web and apps with integrated tools and analytics for their food business to track, monitor, and optimise the key metrics for boosting sales. "
        href="/work/food"
        />
-      <GetConsultingSection
+      {/* <GetConsultingSection
         heading={" Interested in different services?"}
         text1={"Look no further. Your challenge, our expertise."}
         text2={"Schedule a call to share your idea!"}
-      />
+      /> */}
     </>
   );
 }

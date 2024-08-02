@@ -145,7 +145,7 @@ const industries = [
         <ParticlesComponent id="particles"/>
         <div className="  flex justify-between pt-20 pb-10 lg:gap-10">
         <div className='pt-20 min-h-fit flex justify-center items-start  text-secondary flex-col lg:py-20 lg:pl-20 lg:w-[70%] w-full p-6'>
-            <h1 className=' text-3xl lg:text-6xl  font-poppins tracking-wide font-bold leading-tight'>Elevate your Travel and Hospitality Business with our Tailored Software Solutions
+            <h1 className=' text-3xl lg:text-6xl  font-poppins tracking-wide font-bold leading-tight bg-white'>Elevate your Travel and Hospitality Business with our Tailored Software Solutions
             </h1>
             <p className=' font-poppins pt-6'>Olumi’s travel and hospitality software development services offer tailored solutions to businesses, enhancing their operations while elevating their user experience. We bring tailored and innovative solutions powered by the latest technologies to meet the unique needs of your travel and hospitality business. From hotel management solutions to booking apps to POS and CRM system integration, we do it all. Contact us today to get a travel app estimate and carry out your business smoothly with boosted performance!
             </p>
@@ -193,10 +193,10 @@ const industries = [
    
        
     <GetConsultingSection heading={" Boost your Travel and Hospitality Business to Olumi’s Development Services. "} text1={"Look no further. Your challenge, our expertise."} text2={"Schedule a call to share your idea!"}/>
-    <div className="py-20 lg:px-20 p-6">
+    <div className="py-20 lg:px-20 p-6 bg-white">
       <h1 className=" py-10 text-4xl font-heading font-semibold text-forth">Our Travel and Hospitality Services to Boost Your Business
       </h1>
-    <div className=' grid lg:grid-cols-2 gap-10 bg-secondary'>
+    <div className=' grid lg:grid-cols-2 gap-10 '>
       {subServicesTwo.map(service => (
         <ServiceCardTwo
           key={service.id}
@@ -210,6 +210,7 @@ const industries = [
     </div>
         <BenefitsUs/>
         <Resorces 
+         href="/work/travel"
        heading="Our expertise in Travel industry" 
        src={travel} projectName="TripMate" 
        subHeading="Industry: Travel and Hospitality" 
@@ -219,9 +220,9 @@ const industries = [
        moreDes="We designed software to manage everything effortlessly, from managing bookings to automating the workflow to increasing engagement.
   
  "
-       href="/work/travel"
+      
        />
-       <GetConsultingSection heading={"Are you ready to serve your consumers with the ultimate booking system? Talk to our experts now! "} text1={"Look no further. Your challenge, our expertise."} text2={"Schedule a call to share your idea!"}/>
+       {/* <GetConsultingSection heading={"Are you ready to serve your consumers with the ultimate booking system? Talk to our experts now! "} text1={"Look no further. Your challenge, our expertise."} text2={"Schedule a call to share your idea!"}/> */}
         </>
     )
 }

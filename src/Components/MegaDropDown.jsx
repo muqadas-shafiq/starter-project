@@ -5,7 +5,7 @@ export default function Megadropdown(){
     return(
         <div className='absolute font-poppins  mx-auto overflow-auto  right-0 left-0  w-full bg-fifth shadow-lg py-2 lg:py-10 lg:px-20 items-start  flex px-6'>
         <div className='grid lg:grid-cols-4 lg:gap-6 lg:justify-end w-full'>
-          {/* Megadropdown content for Services */}
+       
           <div>
           <div className="lg:mb-10 mb-2">
             {/* <img src="/s4.png" alt="s4" width={60} className="hidden lg:flex"/> */}
@@ -13,7 +13,7 @@ export default function Megadropdown(){
            </div>
             <ul className="lg:flex grid grid-cols-2 lg:flex-col lg:gap-2 text-sm lg:text-lg lg:mt-4 items-start justify-start">
              <li className="font-heading"><Link to="/services/software-dev/"> Software Development <br/> <span className="hidden lg:flex text-sm text-gray-400 font-normal font-poppins">Tailored tech Solutions</span></Link></li>
-             <li className="font-heading"><Link to="/services/webdev">Web Development <br/> <span className="hidden lg:flex text-sm text-gray-400 font-normal font-poppins">Execptional Web Application</span></Link></li>
+             <li className="font-heading"><Link to="/services/webdev">Web Development <br/> <span className="hidden lg:flex text-sm text-gray-400 font-normal font-poppins">Exceptional Web Application</span></Link></li>
              <li className="font-heading"><Link to="/services/app-dev">Mobile App  Development <br/> <span className="hidden lg:flex text-sm text-gray-400 font-normal font-poppins">Cross-platform & Native Applications</span></Link></li>
              <li className="font-heading"><Link to="/services/saas-dev">SAAS Development <br/> <span className="hidden lg:flex text-sm text-gray-400 font-normal font-poppins">Cross-platform & Native Applications</span></Link></li>
             

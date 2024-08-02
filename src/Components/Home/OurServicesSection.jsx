@@ -38,7 +38,7 @@ const OurServicesSection = () => {
     },
     {
       id: 2,
-      h3: 'Mobile App Development',
+      h3: ' App Development',
       src: SiSemanticweb,
       des: `Our innovative team designs and develops bespoke mobile applications that captivate users and drive results. With a deep understanding of iOS and Android ecosystems, we harness the latest technologies to deliver scalable, secure, and intuitive solutions. From concept to launch, we collaborate closely with clients to ensure their vision is realized. `,
      
@@ -150,7 +150,7 @@ const OurServicesSection = () => {
               </div>
             </div>
             {activeId === service.id && (
-              <div className={`flex justify-start mx-auto left-0  flex-col absolute lg:h-[390px] lg:w-[1275px] bg-white text-primary z-40 py-2 lg:py-6 p-4 lg:px-10 font-poppins transition-all duration-150`}>
+              <div className={`flex justify-start mx-auto left-0  flex-col absolute lg:h-[390px] lg:w-[1125px] bg-white text-primary z-40 py-2 lg:py-6 p-4 lg:px-10 font-poppins transition-all duration-150`}>
                 <div className='hidden lg:flex justify-end items-center'>
                   <button onClick={() => toggleDescription(service.id)}><IoMdCloseCircle className='text-3xl text-forth' /></button>
                 </div>
