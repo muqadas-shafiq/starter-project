@@ -117,7 +117,7 @@ const OurServicesSection = () => {
       des: 'In this digital landscape, cloud technology is key to staying ahead. Our expert cloud solutions enable businesses to:',
       li: `Enhance productivity and reduce overheads`,
       li2: "Accelerate time-to-market and improve scalability",
-      li3: "I ncrease agility and innovation",
+      li3: "Increase agility and innovation",
       des2: "By partnering with us, you will experience, improved business efficiency and reduced costs, enhanced collaboration and innovation.",
       to: '/cloud-service',
     },
