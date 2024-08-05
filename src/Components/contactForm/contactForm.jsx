@@ -3,6 +3,7 @@ import { useState } from "react";
 import { BiLogoGmail } from "react-icons/bi";
 import { TbPhoneCalling } from "react-icons/tb";
 import ParticlesComponent from "../particles";
+import { Link } from "react-router-dom";
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -40,7 +41,7 @@ const ContactForm = () => {
       alert("Failed to send message. Please try again later.");
     }
   };
-
+const phoneNumber = '+92 312 4401327'
   return (
     <div className="min-h-screen  lg:flex justify-center items-center  text-secondary lg:px-20 p-6">
        <ParticlesComponent id="particles"/>
@@ -48,9 +49,9 @@ const ContactForm = () => {
         <div className=" lg:w-1/2 flex flex-col mt-20 pr-10 border-r-2  border-tirtry">
         <h1 className=" lg:text-5xl text-3xl mb-10 font-poppins font-bold">Contact Us</h1>
           <h1 className="text-2xl lg:text-3xl font-semibold font-heading capitalize tracking-wider  ">
-          We&apos;re here to help! Reach out to us directly via email or give us a call on WhatsApp to discuss your project. We look forward to hearing from you!
+          We&apos;re here to help! Reach out to us directly via email or give us a call to discuss your project. We look forward to hearing from you!
           </h1>
-         <div className="lg:flex gap-4 items-center space-y-3 py-10 text-black ">
+         <div className="lg:flex gap-4 items-center lg:space-y-0 space-y-3 py-10 text-black ">
           <div className=" flex flex-col items-start bg-white p-5 rounded space-y-3 w-[280px]">
             <h1 className=" text-4xl text-tirtry "><BiLogoGmail/></h1>
             <p className=" text-lg tracking-wider font-semibold font-poppins">Olumitech@gmail.com</p>
@@ -60,7 +61,11 @@ const ContactForm = () => {
               <TbPhoneCalling/>
              
             </h1>
-            <p  className=" text-lg tracking-wider font-poppins font-semibold">+92 312 4401327</p>
+          
+            <Link to={`tel:${phoneNumber}`}className=" text-lg tracking-wider font-poppins font-semibold" >
+          {phoneNumber}
+        </Link>
+           
           </div>
          </div>
         </div>

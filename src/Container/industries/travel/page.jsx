@@ -144,8 +144,8 @@ const industries = [
         <div className=''>
         <ParticlesComponent id="particles"/>
         <div className="  flex justify-between pt-20 pb-10 lg:gap-10">
-        <div className='pt-20 min-h-fit flex justify-center items-start  text-secondary flex-col lg:py-20 lg:pl-20 lg:w-[70%] w-full p-6'>
-            <h1 className=' text-3xl lg:text-6xl  font-poppins tracking-wide font-bold leading-tight bg-white'>Elevate your Travel and Hospitality Business with our Tailored Software Solutions
+        <div className='pt-20 min-h-fit flex justify-center items-start text-secondary  flex-col lg:py-20 lg:pl-20 lg:w-[70%] w-full p-6'>
+            <h1 className=' text-3xl lg:text-6xl  font-poppins tracking-wide font-bold leading-tight'>Elevate your Travel and Hospitality Business with our Tailored Software Solutions
             </h1>
             <p className=' font-poppins pt-6'>Olumi’s travel and hospitality software development services offer tailored solutions to businesses, enhancing their operations while elevating their user experience. We bring tailored and innovative solutions powered by the latest technologies to meet the unique needs of your travel and hospitality business. From hotel management solutions to booking apps to POS and CRM system integration, we do it all. Contact us today to get a travel app estimate and carry out your business smoothly with boosted performance!
             </p>

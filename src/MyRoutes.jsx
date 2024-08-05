@@ -44,13 +44,14 @@ import Conditions from './Container/terms-condition/page';
 import Cookie from './Container/cookies/page';
 import Navbar from './components/Navbar';
 import Footer from "./components/footer/Footer"
+import ThreeDPage from "./Container/services/ThreeDPage/ThreeDPage"
 const Layout = () => (
   <>
     <Navbar />
     <Outlet />
     <ScrollRestoration/>
     <Footer />
-  </>
+    </>
 );
 const routes = createBrowserRouter([
   {
@@ -94,6 +95,7 @@ const routes = createBrowserRouter([
       { path: '/cookies', element: <Cookie /> },
       { path: '/privacy-policy', element: <PrivacyPolicy /> },
       { path: '/terms-condition', element: <Conditions /> },
+      { path: '/services/3d-ar-vr', element: <ThreeDPage /> },
     ],
   },
 ]);

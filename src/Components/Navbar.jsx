@@ -21,6 +21,7 @@ const Navbar = () => {
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const [industriesDropdownOpen, setIndustriesDropdownOpen] = useState(false);
   const [companyDropdownOpen, setCompanyDropdownOpen] = useState(false);
+  const [shake, setShake] = useState(false);
   // useEffect(async()=>{
   //    const session = await auth()
 
@@ -54,7 +55,16 @@ const Navbar = () => {
   const toggleCompanyDropdown = () => {
     setCompanyDropdownOpen(!companyDropdownOpen);
   };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShake((prev) => !prev);
+    }, 2000);
 
+    return () => clearInterval(interval);
+  }, []);
+  const handleLinkClick = () => {
+    setHovered(false);
+  };
   return (
     <div className={`fixed w-full z-10 text-secondary bg-fifth`}>
       <div className="flex justify-between  items-center px-1 md:px-28 py-5">
@@ -110,7 +120,7 @@ const Navbar = () => {
                   onMouseEnter={() => handleMouseEnter("services")}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <Megadropdown />
+                  <Megadropdown onLinkClick={handleLinkClick} />
                 </div>
               )}
             </li>
@@ -135,7 +145,7 @@ const Navbar = () => {
                   onMouseEnter={() => handleMouseEnter("Industries")}
                   onMouseLeave={handleMouseLeave}
                 >
-                  <MegaDropDownIndustries />
+                  <MegaDropDownIndustries onLinkClick={handleLinkClick}/>
                 </div>
               )}
             </li>
@@ -163,12 +173,12 @@ const Navbar = () => {
           </ul>
          
         </div>
-        <div className="bg-tirtry text-secondary font-semibold font-poppins tracking-wider py-2 px-3 rounded lg:flex hidden">
+        <div className={`bg-tirtry text-secondary font-semibold font-poppins tracking-wider py-2 px-3 rounded lg:flex hidden ${shake ? "shake" : ""}`}>
           <Link
               to={"/contact"}
               onMouseEnter={() => handleMouseEnter("contact")}
               onMouseLeave={handleMouseLeave}
-              className={`${hovered === "contact" ? "text-black" : ""}`}
+              className={`${hovered === "contact" ? "text-black" : ""} `}
             >
               Contact Us
             </Link>

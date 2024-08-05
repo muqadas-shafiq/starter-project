@@ -12,36 +12,30 @@ import ParticlesComponent from "../../../components/particles";
 import { GiLowTide } from "react-icons/gi";
 import { FaHighlighter } from "react-icons/fa";
 import { PiUserCircleBold } from "react-icons/pi";
-export default function DigitalMarketing() {
+export default function ThreeDPage() {
   const [hoveredId, setHoveredId] = useState(null);
   const subServices = [
     {
       id: 1,
       icon: GiLowTide,
-      heading: "Search Engine Optimization",
+      heading: "Customer Engagement",
       description:
-        "Our SEO strategies will allow your business to rank higher in search results. Get to know our team and explore more of our services here.",
+        "Integrating (AR) and (VR) solutions into your organizational processes enables enhanced control and efficiency across various business operations. From immersive virtual conferencing rooms and interactive kiosks to virtual fitting rooms for ecommerce and location-based AR gaming, our solutions span multiple industries. ",
     },
     {
       id: 2,
       icon: FaHighlighter,
-      heading: "Social Media Marketing",
+      heading: "Achieve Goals",
       description:
-        "Social media is the king these days. Allow us to create a social media strategy for your brand/business that will bring you remarkable success and visibility among your Competition.",
+        "Our extensive expertise in VR/AR has revealed its vast potential to transform businesses in various ways. VR/AR can be leveraged to captivate customers, enhance staff training, elevate data visualization, and even foster a more enjoyable work environment. Whether you are looking to drive engagement, boost productivity, or simply explore new possibilities, AR/VR offers a wide range of applications that can help you achieve your goals.",
     },
-    {
-      id: 3,
-      icon: MdAdsClick,
-      heading: "Pay Per Click",
-      description:
-        "Use our Pay-per-click marketing services as it is a cost-effective tool for delivering outstanding results. Talk to our PPC experts to use this tool for your digital marketing",
-    },
+    
     {
       id: 4,
       icon: PiUserCircleBold,
-      heading: "Content Marketing Services",
+      heading: "3D visualizations",
       description:
-        "Our content marketing strategy can help you deliver the right content and information to your audience that will create an impeccable image of your business. Let&apos; create magic with our content marketing services",
+        "Bring your ideas to life with stunning 3D animations and visualizations. Our team creates detailed and accurate 3D models for architecture, product design, and more. Contact us today to learn more about our 3D solutions and how we can help your business thrive in the digital age.",
     },
   ];
 
@@ -51,18 +45,11 @@ export default function DigitalMarketing() {
       <ParticlesComponent id="particles"/>
         <div className="  flex justify-between pt-20 pb-10 lg:gap-10">
           <div className="pt-20 min-h-fit flex justify-center items-start  text-secondary flex-col lg:py-20 lg:pl-20 lg:w-[70%] w-full p-6">
-            <h1 className=" text-3xl lg:text-6xl  font-poppins tracking-wide font-bold leading-tight">
-              Leading Digital Marketing Services tailored to Grow your Client
-              base with Targeted and Data-Driven Strategies
+            <h1 className=" text-3xl lg:text-6xl  font-poppins tracking-wide font-bold leading-10">
+            Choose OlumiTech as your premier AR and VR solutions partner. 
             </h1>
             <p className=" font-poppins pt-6">
-              Olumi is a full-service, versatile, and dynamic digital
-              marketing service provider that has a team of expert marketers to
-              design strategies that will help you attract new clients and
-              retain the old ones as well. We have the professionals as well as
-              the experience to build a customised marketing strategy just for
-              your business needs and goals to assist you in reaching new
-              heights. Contact us to learn more about our services!
+            We empower startups and enterprises to unlock the full potential of mixed reality technology, crafting immersive user experiences that leave a lasting impact. Our expert development team leverages a range of mobile development technologies, including Unity, MRTK, C# and C++, to tailor solutions that align perfectly with your technical requirements and vision. 
             </p>
             <div className=" py-6 flex gap-4 justify-start items-center">
               <BookACallButton />
@@ -75,7 +62,7 @@ export default function DigitalMarketing() {
       </div>
       <div className="lg:px-20 p-6 py-20 min-h-screen text-primary bg-white">
         <h1 className="text-4xl font-heading font-bold text-forth">
-        Our Digital Marketing Services eliminate the toughest challenges in your marketing journey!
+        Enter a world of endless possibilities with our AR/VR/3D Solutions
 
 
         </h1>
@@ -106,25 +93,26 @@ export default function DigitalMarketing() {
           ))}
         </div>
       </div>
-
+      <Resorces  />
+      <BenefitsUs />
       <GetConsultingSection
         heading={
-          " Get help from the creative powerhouse, along with the resources to skyrocket your business. Get in touch with us NOW!"
+          " Explore new dimensions with OlumiTech Solutions."
         }
-        text1={"Look no further. Your challenge, our expertise."}
-       
+        text1={"Let dive into cutting-edge VR/AR/3D app development and transform your business!"}
+        
       />
-      <Resorces heading="Our expertise in Wireframing & Prototyping" />
-      <BenefitsUs />
+     
+     
 
-      <GetConsultingSection
+      {/* <GetConsultingSection
         heading={
           "Do You Want to Find Out How Doable Your Idea Is? Let’s Connect! "
         }
         text1={
           "Reach out to us today to start transforming your concept into a reality. "
         }
-      />
+      /> */}
     </>
   );
 }

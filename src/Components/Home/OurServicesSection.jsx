@@ -53,7 +53,7 @@ const OurServicesSection = () => {
      
       des2: "We harness the latest technologies to create bespoke applications that captivate audiences, enhance training, and elevate brand storytelling. ",
       des3 : "From product demos and virtual showrooms to interactive games and simulations, our 3D/AR/VR services empower businesses to innovate, educate, and inspire. Discover new ways to connect with your audience and revolutionize your industry with Olumi Tech  cutting-edge 3D, AR, and VR expertise.",
-      to: '/services',
+      to: '/services/3d-ar-vr',
     },
     {
       id: 4,

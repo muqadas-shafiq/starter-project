@@ -30,7 +30,7 @@ const Services = () => {
     {
       id: 2,
       icon: AiOutlineAntDesign,
-      to: "/services",
+      to: "/design",
       heading: "Digital Design ",
       description:
         "With careful design of interfaces and an appealing style, we strive to create smooth and captivating user experiences with our digital design services. We place a high value on accessibility and usability to ensure that every digital interaction on web and mobile platforms matches your business identity and enhances the user experience.",
@@ -38,7 +38,7 @@ const Services = () => {
     {
       id: 3,
       icon: FaPagelines,
-      to: "/services",
+      to: "/services/digital-marketing",
       heading: "Digital Marketing ",
       description:
         "Olumi offers comprehensive digital marketing solutions to enhance your online presence and drive business growth. Our services include SEO, content marketing, Social Media Marketing, Pay-Per-Click (PPC) Advertising and Email Marketing. We utilize advanced techniques and strategies to ensure your business ranks higher in search results.",
@@ -46,7 +46,7 @@ const Services = () => {
     {
       id: 4,
       icon: MdPages,
-      to: "/services",
+      to: "/services/seo",
       heading: "SEO",
       description:
         "Our SEO services at Olumi will improve  website&apos; internet presence and attract relevant traffic. To ensure your website ranks highly in search engine results, we use modern strategies, including technical SEO audits, content production, and keyword optimization. This will ultimately increase your company&apos; web presence and conversions.",
@@ -62,7 +62,7 @@ const Services = () => {
     {
       id: 6,
       icon: SiSpeedypage,
-      to: "/cloud-services",
+      to: "/cloud-service",
       heading: "Cloud Solutions",
       description:
         "Reliable cloud solutions from Olumi are designed to improve scalability and optimize your company&apos; operations. Our expertise ensures secure, adaptable, and affordable solutions that support your growth and creative goals in today&apos; digital ecosystem, whether you require help with cloud migration, infrastructure management, or SaaS implementation.",

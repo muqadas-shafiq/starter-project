@@ -44,19 +44,19 @@ const reviews = [
   },
   {
     id:5,
-    name: "Sania Aftab, CEO, GreenEarth",
+    name: "Sania Aftab - GreenEarth",
     p2 : "lorem",
     review: "Olumi Tech Company's web development team created a stunning website that perfectly captures our goal. We highly recommend their services"
   },
   {
     id:6,
-    name: "Owais Qaimkhani - Product Manager, FutureGadgets.",
+    name: "Owais Qaimkhani -  FutureGadgets.",
     p2 : "lorem",
     review: "We were impressed by Olumi Tech Company's innovative approach to our AR project. Their team delivered a cutting-edge solution that exceeded our expectations, resulting in a significant increase in customer engagement. "
   },
   {
     id:7,
-    name: "Danish, Training Manager, AeroTech",
+    name: "Danish - AeroTech",
     p2 : "lorem",
     review: "We partnered with Olumi Tech Company to develop a custom VR program for our employees.  Their AR/VR expertise is unparalleled, and we look forward to future collaborations."
   },

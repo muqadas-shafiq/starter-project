@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom"
 import { FaCaretRight } from "react-icons/fa";
-export default function MegaDropDownIndustries(){
+export default function MegaDropDownIndustries({onLinkClick}){
   const fintechItems =[
    { id:1, to: '/industries/fintech', name: "Fintech Development & Api Integrations" },
    { id:2,to: '/industries/fintech', name: "Accounting Software" },
@@ -40,7 +40,9 @@ export default function MegaDropDownIndustries(){
   ]
     return(
         <>
-         <div className='absolute lg:min-h-[900px] min-h-screen font-poppins  mx-auto overflow-hidden right-0 left-0   w-full bg-fifth text-secondary shadow-lg py-10 lg:px-20 p-6 items-start  flex'>
+         <div
+         onClick={onLinkClick}
+          className='absolute lg:min-h-[900px] min-h-screen font-poppins  mx-auto overflow-hidden right-0 left-0   w-full bg-fifth text-secondary shadow-lg py-10 lg:px-20 p-6 items-start  flex'>
         <div className='grid lg:grid-cols-3 lg:gap-6 gap-2 w-full'>
           {/* Megadropdown content for Services */}
           <div>

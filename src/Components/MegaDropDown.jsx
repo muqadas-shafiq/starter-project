@@ -1,9 +1,9 @@
 import {Link} from "react-router-dom"
 
 
-export default function Megadropdown(){
+export default function Megadropdown({onLinkClick}){
     return(
-        <div className='absolute font-poppins  mx-auto overflow-auto  right-0 left-0  w-full bg-fifth shadow-lg py-2 lg:py-10 lg:px-20 items-start  flex px-6'>
+        <div onClick={onLinkClick} className='absolute font-poppins  mx-auto overflow-auto  right-0 left-0  w-full bg-fifth shadow-lg py-2 lg:py-10 lg:px-20 items-start  flex px-6'>
         <div className='grid lg:grid-cols-4 lg:gap-6 lg:justify-end w-full'>
        
           <div>
