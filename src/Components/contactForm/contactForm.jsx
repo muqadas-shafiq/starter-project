@@ -54,7 +54,7 @@ const phoneNumber = '+92 312 4401327'
          <div className="lg:flex gap-4 items-center lg:space-y-0 space-y-3 py-10 text-black ">
           <div className=" flex flex-col items-start bg-white p-5 rounded space-y-3 w-[280px]">
             <h1 className=" text-4xl text-tirtry "><BiLogoGmail/></h1>
-            <p className=" text-lg tracking-wider font-semibold font-poppins">Olumitech@gmail.com</p>
+            <p className=" text-lg tracking-wider font-semibold font-poppins">contact@olumitech.com</p>
           </div>
           <div className=" flex flex-col items-start bg-white p-5 rounded space-y-3 w-[280px] ">
             <h1 className=" text-4xl text-tirtry ">
