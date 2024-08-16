@@ -9,7 +9,7 @@ import Home from './Container/Home';
 import About from './Container/about/page';
 import ContactPage from './Container/contact/page';
 
-import Work from './Container/work/page';
+// import Work from './Container/work/page';
 
 import PrivacyPolicy from './Container/privacy-policy/page';
 import Conditions from './Container/terms-condition/page';
@@ -33,7 +33,7 @@ const routes = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/about', element: <About /> },
      
-      { path: '/work', element: <Work /> },
+    
       { path: '/contact', element: <ContactPage /> },
    
  

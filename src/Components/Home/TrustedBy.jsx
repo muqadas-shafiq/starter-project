@@ -4,10 +4,9 @@ const TrustedBy = () => {
   return (
     <div className='text-black max-w-full min-h-screen flex flex-col items-start justify-center lg:py-10 p-6'>
       <h1 
-        data-aos="fade-up"
-        data-aos-duration="500" 
+       
         className='flex items-center justify-center w-full font-bungee text-5xl font-semibold text-black my-10'>
-        MY RECENT PROJECTS!
+        MY Experties
       </h1>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
