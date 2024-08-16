@@ -12,14 +12,15 @@ module.exports = {
         sans: "sans-serif",
         poppins: ["poppins"],
         overlock: ["Sofia Sans"],
-        heading: ["Sofia Sans"],
+        bungee: ['Bungee Tint'],
+        heading: ["Varela Round"],
       },
       colors: {
         primary: "#222831",
         secondary: "#F8F1F1",
         tirtry: "#eb2c46",
         forth: "#B43F3F",
-        fifth: "#173B45",
+        fifth: "#021526",
         six: "#0e113e"
       },
     },

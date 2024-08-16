@@ -9,74 +9,58 @@ import Resorces from "../components/Home/Resorces";
 import TestimonialSlider from "../components/Home/TestimonialSection";
 import TrustedBy from "../components/Home/TrustedBy";
 import ParticlesComponent from "../components/particles";
-
+import { FaRegHandPointRight } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
     <div>
 <ParticlesComponent id="particles"/>
-<div className="divBg flex-col lg:flex-row text-start flex items-center lg:justify-start justify-center  max-w-full    lg:pt-10 min-h-screen lg:px-28 px-6 py-6 mx-auto">
-        <div className="  lg:mt-10 mt-16">
-          <p
-            data-aos="fade-down"
-            data-aos-duration="900"
-            className=" font-poppins  text-secondary font-semi-bold"
-          >
+<div className="divBg  text-start flex flex-col  justify-center  max-w-full    lg:pt-10 min-h-screen  px-20 pt-20 ">
+   <div className="flex justify-between items-center ">
+   <h1 className=" font-bungee text-8xl">FULL-STACK</h1>
+   <div >
+   <p className=" bg-secondary rounded-full py-3 w-[350px] flex justify-center font-poppins uppercase font-semibold italic items-center gap-3">Projects <span><FaRegHandPointRight/></span></p>
+   </div>
+   </div>
 
-OlumiTech - Your technology partner for a brighter future
- 
 
-          </p>
-          <div
-  data-aos="fade-down"
-  data-aos-duration="800"
-  className="text-secondary text-4xl lg:text-7xl py-4 font-overlock font-bold"
->
-  At Olumi, we specialize
-  <div className="flex items-center">
-    <span>in{" "}</span>
-    <span className="ml-2 text-3xl lg:text-7xl"> {/* Adjust margin as needed */}
-      <ReactTyped
-        strings={[
-          "Software Development",
-          "Digital Designs",
-          "Apps Development",
-          "3D / VR / AR",
-          "SEO",
-          "Digital Marketing",
-          " AI Solution",
-          "Cloud Solution"
-        ]}
-        typeSpeed={40}
-        backSpeed={50}
-        showCursor={false}
-        loop
-        className="text-tirtry"
-      />
-    </span>
+   <div className="flex justify-between items-center">
+  
+   <div>
+   <p className=" text-secondary w-[450px] italic font-poppins capitalize">My goal is to write maintainable, clean
+and understandable code to process
+development was enjoyable.</p>
+   </div>
+   <h1 className=" font-bungee text-8xl text-secondary">Developer</h1>
+   </div>
+
+
+
+
+
+<div className=" flex justify-center items-center mt-10 gap-3 font-poppins italic">
+  <div className=" py-2 px-6 border border-secondary rounded-full text-secondary">
+    <p>FRONT-END </p>
   </div>
-  <span>Services</span>
+  <div className=" py-2 px-6 border border-secondary rounded-full text-secondary">
+    <p>BACKEND</p>
+  </div>
+  <div className=" py-2 px-6 border border-secondary rounded-full text-secondary">
+    <p>DATABASE</p>
+  </div>
+  <div className=" py-2 px-6 border border-secondary rounded-full text-secondary">
+    <p>API&apos;s</p>
+  </div>
+ 
 </div>
-
-          <div
-           
-            className=" mt-4 flex gap-4 justify-start items-center"
-          >
-            <BookACallButton />
-            <GetandEstimateButtn/>
-          </div>
-        </div>
-        {/* <div className=" hidden  lg:flex items-start justify-start  ">
-<img src="/8382.png" alt="homeImg" width={600} />
-
-        </div> */}
+   
       </div>
 
       <TrustedBy />
     
 
-      <OurServicesSection />
+      {/* <OurServicesSection /> */}
       <CloudSection />
       {/* <hr className="border-t-2 px-28 border-forth"/> */}
       <Resorces />

@@ -1,63 +1,75 @@
-import React from 'react'
-
-import { RiGlobeFill } from "react-icons/ri";
-import { TbCloudSnow } from "react-icons/tb";
-import { SiMicrostrategy } from "react-icons/si";
-import { IoNewspaperOutline } from "react-icons/io5";
-import { SiAntdesign } from "react-icons/si";
-import { AiFillFire } from "react-icons/ai";
-import { AiFillMerge } from "react-icons/ai";
-import { AiFillDribbbleCircle } from "react-icons/ai";
-import Cards from '../Cards/Cards';
-
-
-
-//data-aos="fade-down"
-   //  data-aos-duration="1000"
+import React from 'react';
+import "./styles.css"
 const TrustedBy = () => {
-
-
-  
-
   return (
-    <div 
-   
-     className=' bg-[#fff0e6] text-black  max-w-full min-h-[600px]  flex flex-col items-start justify-center lg:py-10 lg:px-28 p-6'>
-        
-      {/* <p className=' font-poppins'>Wellcome to <span className='text-md text-secondary font-semibold'>Olumi</span></p> */}
-<h1  data-aos="fade-up"
-     data-aos-duration="500" className=' font-overlock text-5xl font-semibold text-black my-10'>What Makes us Stand out! 
-</h1>
-<hr  className=' pt-4 w-[200px] border-t-4 border-forth'/>
-<p className=' text-sm font-poppins max-w-[600px]'>We helped clients skyrocket their businesses with our targeted strategies.
+    <div className='text-black max-w-full min-h-screen flex flex-col items-start justify-center lg:py-10 p-6'>
+      <h1 
+        data-aos="fade-up"
+        data-aos-duration="500" 
+        className='flex items-center justify-center w-full font-bungee text-5xl font-semibold text-black my-10'>
+        MY RECENT PROJECTS!
+      </h1>
 
-
-
-</p>
-<div  data-aos="fade-up"
-     data-aos-duration="600" className='flex lg:flex-row flex-col gap-20 justify-between w-full mt-20'>
-    <Cards
-   
-    number={"105+"}
-    text={"We have earned loyal clients by completing projects successfully while ensuring customer satisfaction."}
-    />
-    <Cards
-  
-    number={"195+"}
-    text={"Our collaborations with reputable businesses have helped us become a trustworthy digital firm.  "}
-    />
-    <Cards
-   
-    number={" 50+"}
-    text={"Our team consists of expert designers, developers, marketers, analysts, and IT enthusiasts who bring creativity and perfection to your project. "}
-    />
-  
-   
-  
-   
-</div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid gap-4">
+          <div className="relative case-study">
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt=""/>
+            <span className="case-study-text">Case Study 1</span>
+          </div>
+          <div className="relative case-study">
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt=""/>
+            <span className="case-study-text">Case Study 2</span>
+          </div>
+          <div className="relative case-study">
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt=""/>
+            <span className="case-study-text">Case Study 3</span>
+          </div>
+        </div>
+        <div className="grid gap-4">
+          <div className="relative case-study">
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt=""/>
+            <span className="case-study-text">Case Study 4</span>
+          </div>
+          <div className="relative case-study">
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt=""/>
+            <span className="case-study-text">Case Study 5</span>
+          </div>
+          <div className="relative case-study">
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt=""/>
+            <span className="case-study-text">Case Study 6</span>
+          </div>
+        </div>
+        <div className="grid gap-4">
+          <div className="relative case-study">
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt=""/>
+            <span className="case-study-text">Case Study 7</span>
+          </div>
+          <div className="relative case-study">
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt=""/>
+            <span className="case-study-text">Case Study 8</span>
+          </div>
+          <div className="relative case-study">
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt=""/>
+            <span className="case-study-text">Case Study 9</span>
+          </div>
+        </div>
+        <div className="grid gap-4">
+          <div className="relative case-study">
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt=""/>
+            <span className="case-study-text">Case Study 10</span>
+          </div>
+          <div className="relative case-study">
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt=""/>
+            <span className="case-study-text">Case Study 11</span>
+          </div>
+          <div className="relative case-study">
+            <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt=""/>
+            <span className="case-study-text">Case Study 12</span>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
 
-export default TrustedBy
+export default TrustedBy;
