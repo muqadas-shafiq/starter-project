@@ -9,17 +9,10 @@ import singleTwo from "./assets/single2.jpeg";
 import webdev from "./assets/webdev.png";
 import whatssapp from "./assets/whatsapp.png";
 import workImg from "./assets/workImg.jpeg";
-import education from "./assets/industries/education.jpeg";
-import finance from "./assets/industries/finance.jpg";
-import health from "./assets/industries/health.jpeg";
-import marketing from "./assets/industries/marketing.jpg";
-import travel from "./assets/industries/travel.jpg";
-import food from "./assets/industries/food.jpg"
-import SEoPerson from "./assets/team/SEOPerson.jpg"
-import designerPerson from "./assets/team/Designer.jpg"
-import CEOPerson from "./assets/team/CEO.jpg"
-import FounderPerson from "./assets/team/Founder.jpeg"
-import Techniqal from "./assets/team/Techniqal.png"
+import UNIHUB from "./assets/portfolio/unihub.png"
+import infoImg from "./assets/portfolio/info.png"
+import OlumiImg from "./assets/portfolio/olumi.png"
+
 const Images = {
   groupTwo: groupTwo,
   group: group,
@@ -31,17 +24,10 @@ const Images = {
   webdev: webdev,
   whatssapp: whatssapp,
   workImg: workImg,
-  education: education,
-  finance: finance,
-  health: health,
-  marketing: marketing,
-  travel: travel,
-  food: food,
-  FounderPerson:FounderPerson,
-  designerPerson:designerPerson,
-  CEOPerson: CEOPerson,
-  SEoPerson:SEoPerson,
-  Techniqal:Techniqal
+  UNIHUB: UNIHUB,
+  infoImg: infoImg,
+  OlumiImg:OlumiImg
+  
 
 
 };

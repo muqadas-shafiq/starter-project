@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from "react-router-dom"
-import Images from '../../data'
-const Resorces = ({
+import Images from '../data'
+const Portfolio = ({
   heading = 'Our work',
   subHeading = 'From concept to success: see our solutions in action',
   projectName = 'Uni Hub',
@@ -15,7 +15,11 @@ const Resorces = ({
     <>
     <h1  className='flex items-center justify-center w-full font-bungee text-5xl font-semibold text-black my-2'>Projects</h1>
     <div className='text-secondary min-h-screen w-full px-6 lg:px-20 font-poppins flex py-10 gap-10'>
-      
+    <div  className=' max-w-[60%]'>
+     
+     <img src={src} alt="workImg"/>
+  
+ </div>
        <div className=' max-w-[40%]'>
        
         <p className='lg:w-[600px] pt-2 pb-3'>{subHeading}</p>
@@ -31,14 +35,10 @@ const Resorces = ({
           <Link to={href} className='py-2 px-6 bg-forth text-secondary font-semibold rounded-full'>Case Details</Link>
         </div>
       </div>
-      <div  className=' max-w-[60%]'>
      
-          <img src={src} alt="workImg"/>
-       
-      </div>
     </div>
     </>
   )
 }
 
-export default Resorces
+export default Portfolio

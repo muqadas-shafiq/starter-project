@@ -10,9 +10,11 @@ import TestimonialSlider from "../components/Home/TestimonialSection";
 import TrustedBy from "../components/Home/TrustedBy";
 import ParticlesComponent from "../components/particles";
 import { FaRegHandPointRight } from "react-icons/fa";
+import Images from "../data";
 import Navbar from "../components/Navbar";
-
+import Portfolio from "../components/Portfolio";
 const Home = () => {
+  const {UNIHUB, infoImg, OlumiImg} = Images
   return (
     <div>
 <ParticlesComponent id="particles"/>
@@ -56,7 +58,9 @@ development was enjoyable.</p>
 </div>
    
       </div>
-
+<Resorces src={UNIHUB}/>
+<Portfolio src={infoImg}/>
+<Resorces src={OlumiImg}/>
       <TrustedBy />
     
 
