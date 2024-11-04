@@ -4,6 +4,7 @@ import MyRoutes from './MyRoutes';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
+
 const App = () => {
   Aos.init({
     duration: 1800,
