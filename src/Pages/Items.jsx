@@ -1,6 +1,6 @@
 import React from 'react'
 import pizza from '../assets/pizza-olive.jpg'
-import tomato from '../assets/tomato-piza.jpg'
+
 
 const Items = () => {
   return (
@@ -8,7 +8,7 @@ const Items = () => {
 
         <h1 className='text-6xl mt-16 font-bold'>Italy Pizza Menu</h1>
 
-       <div className='flex justify-between items-center px-20 my-10 gap-10 p-4'>
+       <div className='flex justify-between items-center px-20 my-10 gap-10 p-4 flex-col '>
 
        <div className=' bg-white text-black flex flex-col justify-start items-start rounded-3xl '>
            <div className=' p-8'>
@@ -36,7 +36,7 @@ const Items = () => {
         </div>
 
        </div>
-       <div className='flex my-12 gap-10  px-20'>
+       <div className='flex my-12 gap-10  px-20 flex-col'>
 
        <div className=' bg-white text-black flex flex-col justify-start items-start rounded-3xl   '>
            <div className=' p-8'>
