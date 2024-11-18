@@ -6,14 +6,15 @@ import {
   Outlet,
 } from 'react-router-dom';
 
-import { Home } from './Home';
+import Home from './Container/Home';
+import Fun from './Container/Fun';
 
 const Layout = () => (
   <>
     
     <Outlet />
     <ScrollRestoration/>
-    
+  
     </>
 );
 const routes = createBrowserRouter([
@@ -22,6 +23,7 @@ const routes = createBrowserRouter([
     element: <Layout />,
     children: [
       { path: '/', element: <Home /> },
+      {path:'/fun', element:<Fun/>},
      
      
     
